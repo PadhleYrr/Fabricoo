@@ -1,6 +1,6 @@
 <svg width="400" height="160" viewBox="0 0 380 160" xmlns="http://www.w3.org/2000/svg">
 <rect width="380" height="160" fill="#ffffff"/>
-<text x="190" y="88" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" letter-spacing="12" fill="#1a1a1a">BASICOO</text>
+<text x="190" y="88" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" letter-spacing="12" fill="#1a1a1a">FABRICOO</text>
 <line x1="90" y1="104" x2="290" y2="104" stroke="#1a1a1a" stroke-width="0.8"/>
 <text x="190" y="120" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" letter-spacing="5" fill="#555555">ESSENTIALS</text>
 </svg>
