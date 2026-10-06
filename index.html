@@ -9,11 +9,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content=""><link rel="canonical" href="index.html"><link rel="preconnect" href="cdn.shopify.com/index.html" crossorigin><link rel="preconnect" href="../fonts.shopifycdn.com/index.html" crossorigin><!-- Preload onDomain stylesheets and script libraries -->
-  <link href="cdn/shop/t/4/assets/themec5e1.js?v=151739838966286893621756554113" as="script" rel="preload">
-  <link href="cdn/shop/t/4/assets/theme6bca.css?v=8861224237448410331756554113" rel="stylesheet" type="text/css" media="all" />
+  <meta name="theme-color" content=""><link rel="canonical" href="index.html"><link rel="preconnect" href="../fonts.shopifycdn.com/index.html" crossorigin><!-- Preload onDomain stylesheets and script libraries -->
+  <link href="assets/js/theme.js" as="script" rel="preload">
+  <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
 
-    <link rel="shortcut icon" href="cdn/shop/files/Untitled_design12363.png?crop=center&amp;height=32&amp;v=1756806605&amp;width=32" type="image/png" />
+    <link rel="shortcut icon" href="assets/img/Untitled_design12363.png" type="image/png" />
   
 
   <title>
@@ -23,8 +23,8 @@
   <meta name="description" content="Basicoo – your go-to clothing brand for stylish, comfortable, and timeless essentials. Shop premium basics for men and women at unbeatable value.">
 
   
-<meta property="og:image" content="cdn/shop/files/Untitled_design_4eefc.png?v=1756807187&amp;width=1024">
-  <meta property="og:image:secure_url" content="cdn/shop/files/Untitled_design_4eefc.png?v=1756807187&amp;width=1024">
+<meta property="og:image" content="assets/img/Untitled_design_4eefc.png">
+  <meta property="og:image:secure_url" content="assets/img/Untitled_design_4eefc.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="628"><meta property="og:site_name" content="Basicoo">
 
@@ -54,8 +54,8 @@
   </script>
  
 
-  <script src="cdn/shop/t/4/assets/vendor-cookiesaf46.js?v=127766308438524358541756554113" defer="defer"></script>
-  <script src="cdn/shop/t/4/assets/themec5e1.js?v=151739838966286893621756554113" defer></script>
+  <script src="assets/js/vendor-cookies.js" defer="defer"></script>
+  <script src="assets/js/theme.js" defer></script>
 
   <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="0yxyhxCVegXcK5BoGWSbLITvEXc9tMNZX6SY9FRZXTc">
 <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/65026785347/digital_wallets/dialog">
@@ -86,7 +86,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   window.Shopify.SignInWithShop.eligible = true;
 </script>
 <script id="shop-js-analytics" type="application/json">{"pageType":"index"}</script>
-<script defer="defer" async type="module" src="cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js"></script>
+
 <script type="module">
   await import("cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js");
 
@@ -101,8 +101,8 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <script id="__st">var __st={"a":65026785347,"offset":19800,"reqid":"060bc8d1-36b8-4108-acb9-b87a45f8780b-1791309040","pageurl":"basicoo.com\/","u":"7f56057d002b","p":"home"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
-<script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
-<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script id="shopify-origin-trials" async="async" integrity="sha256-qJbe/jEZBHtr5W/BlA2cKAz3vkXu6vJQyLjgvgCC86g=" src="https://cdn.shopify.com:443/shopifycloud/storefront/assets/storefront/origin_trials-318ab40a.js" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
+
+<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script>
 <script>
   window.Shopify = window.Shopify || {};
   window.Shopify.MCP = window.Shopify.MCP || {};
@@ -132,8 +132,8 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("cdn/fonts/cabin/cabin_n4.cefc6494a78f87584a6f312fea532919154f66fe.woff2") format("woff2"),
-       url("cdn/fonts/cabin/cabin_n4.8c16611b00f59d27f4b27ce4328dfe514ce77517.woff.woff2") format("woff");
+  src: url("assets/fonts/cabin_n4.cefc6494a78f87584a6f312fea532919154f66fe.woff2") format("woff2"),
+       url("assets/fonts/cabin_n4.8c16611b00f59d27f4b27ce4328dfe514ce77517.woff.woff2") format("woff");
 }
 
 @font-face {
@@ -141,8 +141,8 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("cdn/fonts/cabin/cabin_n7.255204a342bfdbc9ae2017bd4e6a90f8dbb2f561.woff2") format("woff2"),
-       url("cdn/fonts/cabin/cabin_n7.e2afa22a0d0f4b64da3569c990897429d40ff5c0.woff.woff2") format("woff");
+  src: url("assets/fonts/cabin_n7.255204a342bfdbc9ae2017bd4e6a90f8dbb2f561.woff2") format("woff2"),
+       url("assets/fonts/cabin_n7.e2afa22a0d0f4b64da3569c990897429d40ff5c0.woff.woff2") format("woff");
 }
 
 @font-face {
@@ -150,8 +150,8 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   font-weight: 400;
   font-style: italic;
   font-display: swap;
-  src: url("cdn/fonts/cabin/cabin_i4.d89c1b32b09ecbc46c12781fcf7b2085f17c0be9.woff2") format("woff2"),
-       url("cdn/fonts/cabin/cabin_i4.0a521b11d0b69adfc41e22a263eec7c02aecfe99.woff.woff2") format("woff");
+  src: url("assets/fonts/cabin_i4.d89c1b32b09ecbc46c12781fcf7b2085f17c0be9.woff2") format("woff2"),
+       url("assets/fonts/cabin_i4.0a521b11d0b69adfc41e22a263eec7c02aecfe99.woff.woff2") format("woff");
 }
 
 @font-face {
@@ -159,8 +159,8 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   font-weight: 700;
   font-style: italic;
   font-display: swap;
-  src: url("cdn/fonts/cabin/cabin_i7.ef2404c08a493e7ccbc92d8c39adf683f40e1fb5.woff2") format("woff2"),
-       url("cdn/fonts/cabin/cabin_i7.480421791818000fc8a5d4134822321b5d7964f8.woff.woff2") format("woff");
+  src: url("assets/fonts/cabin_i7.ef2404c08a493e7ccbc92d8c39adf683f40e1fb5.woff2") format("woff2"),
+       url("assets/fonts/cabin_i7.480421791818000fc8a5d4134822321b5d7964f8.woff.woff2") format("woff");
 }
 
 @font-face {
@@ -168,8 +168,8 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("cdn/fonts/archivo/archivo_n4.dc8d917cc69af0a65ae04d01fd8eeab28a3573c9.woff2") format("woff2"),
-       url("cdn/fonts/archivo/archivo_n4.bd6b9c34fdb81d7646836be8065ce3c80a2cc984.woff.woff2") format("woff");
+  src: url("assets/fonts/archivo_n4.dc8d917cc69af0a65ae04d01fd8eeab28a3573c9.woff2") format("woff2"),
+       url("assets/fonts/archivo_n4.bd6b9c34fdb81d7646836be8065ce3c80a2cc984.woff.woff2") format("woff");
 }
 
 @font-face {
@@ -177,8 +177,8 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url("cdn/fonts/work_sans/worksans_n3.9147fb8a17f92eea90fbd0f4a12980752c760985.woff2") format("woff2"),
-       url("cdn/fonts/work_sans/worksans_n3.77ff01b19c0b08f0c3cb6da29ec620c1042f8122.woff.woff2") format("woff");
+  src: url("assets/fonts/worksans_n3.9147fb8a17f92eea90fbd0f4a12980752c760985.woff2") format("woff2"),
+       url("assets/fonts/worksans_n3.77ff01b19c0b08f0c3cb6da29ec620c1042f8122.woff.woff2") format("woff");
 }
 
 
@@ -664,8 +664,8 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </style>
 
 
-  <link href="cdn/shop/t/4/assets/theme6bca.css?v=8861224237448410331756554113" rel="stylesheet" type="text/css" media="all" />
-<link rel="preload" as="font" href="cdn/fonts/cabin/cabin_n4.cefc6494a78f87584a6f312fea532919154f66fe.woff2" type="font/woff2" crossorigin><link rel="preload" as="font" href="cdn/fonts/archivo/archivo_n4.dc8d917cc69af0a65ae04d01fd8eeab28a3573c9.woff2" type="font/woff2" crossorigin><link rel="preload" as="font" href="cdn/fonts/work_sans/worksans_n3.9147fb8a17f92eea90fbd0f4a12980752c760985.woff2" type="font/woff2" crossorigin><script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="preload" as="font" href="assets/fonts/cabin_n4.cefc6494a78f87584a6f312fea532919154f66fe.woff2" type="font/woff2" crossorigin><link rel="preload" as="font" href="assets/fonts/archivo_n4.dc8d917cc69af0a65ae04d01fd8eeab28a3573c9.woff2" type="font/woff2" crossorigin><link rel="preload" as="font" href="assets/fonts/worksans_n3.9147fb8a17f92eea90fbd0f4a12980752c760985.woff2" type="font/woff2" crossorigin><script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
 <!-- BEGIN app block: shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b --><link rel='modulepreload' href='cdn.shopify.com/storefront/web-components/chat.js' crossorigin fetchpriority='low'>
 
 <script id='shopify-chat-app-embed-data' type='application/json'>
@@ -723,9 +723,9 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 
 
 
-<link rel="dns-prefetch" href="https://cdn.judge.me/">
-<link rel="dns-prefetch" href="https://cdn1.judge.me/">
-<link rel="dns-prefetch" href="https://api.judge.me/">
+
+
+
 
 <script data-cfasync='false' class='jdgm-settings-script'>window.jdgmSettings={"pagination":5,"disable_web_reviews":false,"badge_no_review_text":"No reviews","badge_n_reviews_text":"{{ n }} review/reviews","hide_badge_preview_if_no_reviews":true,"badge_hide_text":false,"enforce_center_preview_badge":false,"widget_title":"Customer Reviews","widget_open_form_text":"Write a review","widget_close_form_text":"Cancel review","widget_refresh_page_text":"Refresh page","widget_summary_text":"Based on {{ number_of_reviews }} review/reviews","widget_no_review_text":"Be the first to write a review","widget_name_field_text":"Display name","widget_verified_name_field_text":"Verified Name (public)","widget_name_placeholder_text":"Display name","widget_required_field_error_text":"This field is required.","widget_email_field_text":"Email address","widget_verified_email_field_text":"Verified Email (private, can not be edited)","widget_email_placeholder_text":"Your email address","widget_email_field_error_text":"Please enter a valid email address.","widget_rating_field_text":"Rating","widget_review_title_field_text":"Review Title","widget_review_title_placeholder_text":"Give your review a title","widget_review_body_field_text":"Review content","widget_review_body_placeholder_text":"Start writing here...","widget_pictures_field_text":"Picture/Video (optional)","widget_submit_review_text":"Submit Review","widget_submit_verified_review_text":"Submit Verified Review","widget_submit_success_msg_with_auto_publish":"Thank you! Please refresh the page in a few moments to see your review. You can remove or edit your review by logging into \u003ca href='https://judge.me/login' target='_blank' rel='nofollow noopener'\u003eJudge.me\u003c/a\u003e","widget_submit_success_msg_no_auto_publish":"Thank you! Your review will be published as soon as it is approved by the shop admin. You can remove or edit your review by logging into \u003ca href='https://judge.me/login' target='_blank' rel='nofollow noopener'\u003eJudge.me\u003c/a\u003e","widget_show_default_reviews_out_of_total_text":"Showing {{ n_reviews_shown }} out of {{ n_reviews }} reviews.","widget_show_all_link_text":"Show all","widget_show_less_link_text":"Show less","widget_author_said_text":"{{ reviewer_name }} said:","widget_days_text":"{{ n }} days ago","widget_weeks_text":"{{ n }} week/weeks ago","widget_months_text":"{{ n }} month/months ago","widget_years_text":"{{ n }} year/years ago","widget_yesterday_text":"Yesterday","widget_today_text":"Today","widget_replied_text":"\u003e\u003e {{ shop_name }} replied:","widget_read_more_text":"Read more","widget_reviewer_name_as_initial":"","widget_rating_filter_color":"#fbcd0a","widget_rating_filter_see_all_text":"See all reviews","widget_sorting_most_recent_text":"Most Recent","widget_sorting_highest_rating_text":"Highest Rating","widget_sorting_lowest_rating_text":"Lowest Rating","widget_sorting_with_pictures_text":"Only Pictures","widget_sorting_most_helpful_text":"Most Helpful","widget_open_question_form_text":"Ask a question","widget_reviews_subtab_text":"Reviews","widget_questions_subtab_text":"Questions","widget_question_label_text":"Question","widget_answer_label_text":"Answer","widget_question_placeholder_text":"Write your question here","widget_submit_question_text":"Submit Question","widget_question_submit_success_text":"Thank you for your question! We will notify you once it gets answered.","verified_badge_text":"Verified","verified_badge_bg_color":"","verified_badge_text_color":"","verified_badge_placement":"left-of-reviewer-name","widget_review_max_height":"","widget_hide_border":false,"widget_social_share":false,"widget_thumb":false,"widget_review_location_show":false,"widget_location_format":"","all_reviews_include_out_of_store_products":true,"all_reviews_out_of_store_text":"(out of store)","all_reviews_pagination":100,"all_reviews_product_name_prefix_text":"about","enable_review_pictures":true,"enable_question_anwser":false,"widget_theme":"default","review_date_format":"mm/dd/yyyy","default_sort_method":"most-recent","widget_product_reviews_subtab_text":"Product Reviews","widget_shop_reviews_subtab_text":"Shop Reviews","widget_other_products_reviews_text":"Reviews for other products","widget_store_reviews_subtab_text":"Store reviews","widget_no_store_reviews_text":"This store hasn't received any reviews yet","widget_web_restriction_product_reviews_text":"This product hasn't received any reviews yet","widget_no_items_text":"No items found","widget_show_more_text":"Show more","widget_write_a_store_review_text":"Write a Store Review","widget_other_languages_heading":"Reviews in Other Languages","widget_translate_review_text":"Translate review to {{ language }}","widget_translating_review_text":"Translating...","widget_show_original_translation_text":"Show original ({{ language }})","widget_translate_review_failed_text":"Review couldn't be translated.","widget_translate_review_retry_text":"Retry","widget_translate_review_try_again_later_text":"Try again later","show_product_url_for_grouped_product":false,"widget_sorting_pictures_first_text":"Pictures First","show_pictures_on_all_rev_page_mobile":false,"show_pictures_on_all_rev_page_desktop":false,"floating_tab_hide_mobile_install_preference":false,"floating_tab_button_name":"★ Reviews","floating_tab_title":"Let customers speak for us","floating_tab_button_color":"","floating_tab_button_background_color":"","floating_tab_url":"","floating_tab_url_enabled":false,"floating_tab_tab_style":"text","all_reviews_text_badge_text":"Customers rate us {{ shop.metafields.judgeme.all_reviews_rating | round: 1 }}/5 based on {{ shop.metafields.judgeme.all_reviews_count }} reviews.","all_reviews_text_badge_text_branded_style":"{{ shop.metafields.judgeme.all_reviews_rating | round: 1 }} out of 5 stars based on {{ shop.metafields.judgeme.all_reviews_count }} reviews","is_all_reviews_text_badge_a_link":false,"show_stars_for_all_reviews_text_badge":false,"all_reviews_text_badge_url":"","all_reviews_text_style":"branded","all_reviews_text_color_style":"judgeme_brand_color","all_reviews_text_color":"#108474","all_reviews_text_show_jm_brand":false,"featured_carousel_show_header":true,"featured_carousel_title":"Let customers speak for us","testimonials_carousel_title":"Customers are saying","videos_carousel_title":"Real customer stories","cards_carousel_title":"Customers are saying","featured_carousel_count_text":"from {{ n }} reviews","featured_carousel_add_link_to_all_reviews_page":false,"featured_carousel_url":"","featured_carousel_show_images":true,"featured_carousel_autoslide_interval":5,"featured_carousel_arrows_on_the_sides":false,"featured_carousel_height":250,"featured_carousel_width":80,"featured_carousel_image_size":0,"featured_carousel_image_height":250,"featured_carousel_arrow_color":"#eeeeee","verified_count_badge_style":"branded","verified_count_badge_orientation":"horizontal","verified_count_badge_color_style":"judgeme_brand_color","verified_count_badge_color":"#108474","is_verified_count_badge_a_link":false,"verified_count_badge_url":"","verified_count_badge_show_jm_brand":true,"widget_rating_preset_default":5,"widget_first_sub_tab":"product-reviews","widget_show_histogram":true,"widget_histogram_use_custom_color":false,"widget_pagination_use_custom_color":false,"widget_star_use_custom_color":false,"widget_verified_badge_use_custom_color":false,"widget_write_review_use_custom_color":false,"picture_reminder_submit_button":"Upload Pictures","enable_review_videos":false,"mute_video_by_default":false,"widget_sorting_videos_first_text":"Videos First","widget_review_pending_text":"Pending","featured_carousel_items_for_large_screen":3,"social_share_options_order":"Facebook,Twitter","remove_microdata_snippet":true,"disable_json_ld":false,"enable_json_ld_products":false,"preview_badge_show_question_text":false,"preview_badge_no_question_text":"No questions","preview_badge_n_question_text":"{{ number_of_questions }} question/questions","qa_badge_show_icon":false,"qa_badge_position":"same-row","remove_judgeme_branding":false,"widget_add_search_bar":false,"widget_search_bar_placeholder":"Search","widget_sorting_verified_only_text":"Verified only","featured_carousel_theme":"default","featured_carousel_show_rating":true,"featured_carousel_show_title":true,"featured_carousel_show_body":true,"featured_carousel_show_date":false,"featured_carousel_show_reviewer":true,"featured_carousel_show_product":false,"featured_carousel_header_background_color":"#108474","featured_carousel_header_text_color":"#ffffff","featured_carousel_name_product_separator":"reviewed","featured_carousel_full_star_background":"#108474","featured_carousel_empty_star_background":"#dadada","featured_carousel_vertical_theme_background":"#f9fafb","featured_carousel_verified_badge_enable":true,"featured_carousel_verified_badge_color":"#108474","featured_carousel_border_style":"round","featured_carousel_review_line_length_limit":3,"featured_carousel_more_reviews_button_text":"Read more reviews","featured_carousel_view_product_button_text":"View product","all_reviews_page_load_reviews_on":"scroll","all_reviews_page_load_more_text":"Load More Reviews","disable_fb_tab_reviews":false,"enable_ajax_cdn_cache":false,"widget_advanced_speed_features":5,"widget_public_name_text":"displayed publicly like","default_reviewer_name":"John Smith","default_reviewer_name_has_non_latin":true,"widget_reviewer_anonymous":"Anonymous","medals_widget_title":"Judge.me Review Medals","medals_widget_background_color":"#f9fafb","medals_widget_position":"footer_all_pages","medals_widget_border_color":"#f9fafb","medals_widget_verified_text_position":"left","medals_widget_use_monochromatic_version":false,"medals_widget_elements_color":"#108474","show_reviewer_avatar":true,"widget_invalid_yt_video_url_error_text":"Not a YouTube video URL","widget_max_length_field_error_text":"Please enter no more than {0} characters.","widget_show_country_flag":false,"widget_show_collected_via_shop_app":true,"widget_verified_by_shop_badge_style":"light","widget_verified_by_shop_text":"Verified by Shop","widget_show_photo_gallery":false,"widget_load_with_code_splitting":true,"widget_ugc_install_preference":false,"widget_ugc_title":"Made by us, Shared by you","widget_ugc_subtitle":"Tag us to see your picture featured in our page","widget_ugc_arrows_color":"#ffffff","widget_ugc_primary_button_text":"Buy Now","widget_ugc_primary_button_background_color":"#108474","widget_ugc_primary_button_text_color":"#ffffff","widget_ugc_primary_button_border_width":"0","widget_ugc_primary_button_border_style":"none","widget_ugc_primary_button_border_color":"#108474","widget_ugc_primary_button_border_radius":"25","widget_ugc_secondary_button_text":"Load More","widget_ugc_secondary_button_background_color":"#ffffff","widget_ugc_secondary_button_text_color":"#108474","widget_ugc_secondary_button_border_width":"2","widget_ugc_secondary_button_border_style":"solid","widget_ugc_secondary_button_border_color":"#108474","widget_ugc_secondary_button_border_radius":"25","widget_ugc_reviews_button_text":"View Reviews","widget_ugc_reviews_button_background_color":"#ffffff","widget_ugc_reviews_button_text_color":"#108474","widget_ugc_reviews_button_border_width":"2","widget_ugc_reviews_button_border_style":"solid","widget_ugc_reviews_button_border_color":"#108474","widget_ugc_reviews_button_border_radius":"25","widget_ugc_reviews_button_link_to":"judgeme-reviews-page","widget_ugc_show_post_date":true,"widget_ugc_max_width":"800","widget_rating_metafield_value_type":true,"widget_primary_color":"#000000","widget_enable_secondary_color":false,"widget_secondary_color":"#edf5f5","widget_summary_average_rating_text":"{{ average_rating }} out of 5","widget_media_grid_title":"Customer photos \u0026 videos","widget_media_grid_see_more_text":"See more","widget_round_style":false,"widget_show_product_medals":true,"widget_verified_by_judgeme_text":"Verified by Judge.me","widget_show_store_medals":true,"widget_verified_by_judgeme_text_in_store_medals":"Verified by Judge.me","widget_media_field_exceed_quantity_message":"Sorry, we can only accept {{ max_media }} for one review.","widget_media_field_exceed_limit_message":"{{ file_name }} is too large, please select a {{ media_type }} less than {{ size_limit }}MB.","widget_review_submitted_text":"Review Submitted!","widget_question_submitted_text":"Question Submitted!","widget_close_form_text_question":"Cancel","widget_write_your_answer_here_text":"Write your answer here","widget_enabled_branded_link":true,"widget_show_collected_by_judgeme":false,"widget_reviewer_name_color":"","widget_write_review_text_color":"","widget_write_review_bg_color":"","widget_collected_by_judgeme_text":"collected by Judge.me","widget_pagination_type":"standard","widget_load_more_text":"Load More","widget_load_more_color":"#108474","widget_full_review_text":"Full Review","widget_read_more_reviews_text":"Read More Reviews","widget_read_questions_text":"Read Questions","widget_questions_and_answers_text":"Questions \u0026 Answers","widget_verified_by_text":"Verified by","widget_verified_text":"Verified","widget_number_of_reviews_text":"{{ number_of_reviews }} reviews","widget_back_button_text":"Back","widget_next_button_text":"Next","widget_custom_forms_filter_button":"Filters","custom_forms_style":"horizontal","widget_show_review_information":false,"how_reviews_are_collected":"How reviews are collected?","widget_show_review_keywords":false,"widget_gdpr_statement":"How we use your data: We'll only contact you about the review you left, and only if necessary. By submitting your review, you agree to Judge.me's \u003ca href='https://judge.me/terms' target='_blank' rel='nofollow noopener'\u003eterms\u003c/a\u003e, \u003ca href='https://judge.me/privacy' target='_blank' rel='nofollow noopener'\u003eprivacy\u003c/a\u003e and \u003ca href='https://judge.me/content-policy' target='_blank' rel='nofollow noopener'\u003econtent\u003c/a\u003e policies.","widget_multilingual_sorting_enabled":false,"widget_translate_review_content_enabled":false,"widget_translate_review_content_method":"manual","popup_widget_review_selection":"automatically_with_pictures","popup_widget_round_border_style":true,"popup_widget_show_title":true,"popup_widget_show_body":true,"popup_widget_show_reviewer":false,"popup_widget_show_product":true,"popup_widget_show_pictures":true,"popup_widget_use_review_picture":true,"popup_widget_show_on_home_page":true,"popup_widget_show_on_product_page":true,"popup_widget_show_on_collection_page":true,"popup_widget_show_on_cart_page":true,"popup_widget_position":"bottom_left","popup_widget_first_review_delay":5,"popup_widget_duration":5,"popup_widget_interval":5,"popup_widget_review_count":5,"popup_widget_hide_on_mobile":true,"review_snippet_widget_round_border_style":true,"review_snippet_widget_card_color":"#FFFFFF","review_snippet_widget_slider_arrows_background_color":"#FFFFFF","review_snippet_widget_slider_arrows_color":"#000000","review_snippet_widget_star_color":"#108474","show_product_variant":false,"all_reviews_product_variant_label_text":"Variant: ","widget_show_verified_branding":true,"widget_ai_summary_title":"Customers say","widget_ai_summary_disclaimer":"AI-powered review summary based on recent customer reviews","widget_show_ai_summary":false,"widget_show_ai_summary_bg":false,"widget_show_review_title_input":false,"redirect_reviewers_invited_via_email":"external_form","request_store_review_after_product_review":true,"request_review_other_products_in_order":false,"review_form_color_scheme":"default","review_form_corner_style":"square","review_form_star_color":{},"review_form_text_color":"#333333","review_form_background_color":"#ffffff","review_form_field_background_color":"#fafafa","review_form_button_color":{},"review_form_button_text_color":"#ffffff","review_form_modal_overlay_color":"#000000","review_content_screen_title_text":"How would you rate this product?","review_content_introduction_text":"We would love it if you would share a bit about your experience.","store_review_form_title_text":"How would you rate this store?","store_review_form_introduction_text":"We would love it if you would share a bit about your experience.","show_review_guidance_text":true,"one_star_review_guidance_text":"Poor","five_star_review_guidance_text":"Great","customer_information_screen_title_text":"About you","customer_information_introduction_text":"Please tell us more about you.","custom_questions_screen_title_text":"Your experience in more detail","custom_questions_introduction_text":"Here are a few questions to help us understand more about your experience.","review_submitted_screen_title_text":"Thanks for your review!","review_submitted_screen_thank_you_text":"We are processing it and it will appear on the store soon.","review_submitted_screen_email_verification_text":"Please confirm your email by clicking the link we just sent you. This helps us keep reviews authentic.","review_submitted_request_store_review_text":"Would you like to share your experience of shopping with us?","review_submitted_review_other_products_text":"Would you like to review these products?","store_review_screen_title_text":"Would you like to share your experience of shopping with us?","store_review_introduction_text":"We value your feedback and use it to improve. Please share any thoughts or suggestions you have.","reviewer_media_screen_title_picture_text":"Share a picture","reviewer_media_introduction_picture_text":"Upload a photo to support your review.","reviewer_media_screen_title_video_text":"Share a video","reviewer_media_introduction_video_text":"Upload a video to support your review.","reviewer_media_screen_title_picture_or_video_text":"Share a picture or video","reviewer_media_introduction_picture_or_video_text":"Upload a photo or video to support your review.","reviewer_media_youtube_url_text":"Paste your Youtube URL here","advanced_settings_next_step_button_text":"Next","advanced_settings_close_review_button_text":"Close","modal_write_review_flow":true,"write_review_flow_required_text":"Required","write_review_flow_privacy_message_text":"We respect your privacy.","write_review_flow_anonymous_text":"Post review as anonymous","write_review_flow_visibility_text":"This won't be visible to other customers.","write_review_flow_multiple_selection_help_text":"Select as many as you like","write_review_flow_single_selection_help_text":"Select one option","write_review_flow_required_field_error_text":"This field is required","write_review_flow_invalid_email_error_text":"Please enter a valid email address","write_review_flow_max_length_error_text":"Max. {{ max_length }} characters.","write_review_flow_media_upload_text":"\u003cb\u003eClick to upload\u003c/b\u003e or drag and drop","write_review_flow_gdpr_statement":"We'll only contact you about your review if necessary. By submitting your review, you agree to our \u003ca href='https://judge.me/terms' target='_blank' rel='nofollow noopener'\u003eterms and conditions\u003c/a\u003e and \u003ca href='https://judge.me/privacy' target='_blank' rel='nofollow noopener'\u003eprivacy policy\u003c/a\u003e.","rating_only_reviews_enabled":false,"show_negative_reviews_help_screen":false,"new_review_flow_help_screen_rating_threshold":3,"negative_review_resolution_screen_title_text":"Tell us more","negative_review_resolution_text":"Your experience matters to us. If there were issues with your purchase, we're here to help. Feel free to reach out to us, we'd love the opportunity to make things right.","negative_review_resolution_button_text":"Contact us","negative_review_resolution_proceed_with_review_text":"Leave a review","negative_review_resolution_subject":"Issue with purchase from {{ shop_name }}.{{ order_name }}","preview_badge_collection_page_install_status":false,"widget_review_custom_css":"","preview_badge_custom_css":"","preview_badge_stars_count":"5-stars","featured_carousel_custom_css":"","floating_tab_custom_css":"","all_reviews_widget_custom_css":"","medals_widget_custom_css":"","verified_badge_custom_css":"","all_reviews_text_custom_css":"","transparency_badges_collected_via_store_invite":false,"transparency_badges_from_another_provider":false,"transparency_badges_collected_from_store_visitor":false,"transparency_badges_collected_by_verified_review_provider":false,"transparency_badges_earned_reward":false,"transparency_badges_collected_via_store_invite_text":"Review collected via store invitation","transparency_badges_from_another_provider_text":"Review collected from another provider","transparency_badges_collected_from_store_visitor_text":"Review collected from a store visitor","transparency_badges_written_in_google_text":"Review written in Google","transparency_badges_written_in_etsy_text":"Review written in Etsy","transparency_badges_written_in_shop_app_text":"Review written in Shop App","transparency_badges_earned_reward_text":"Review earned a reward for future purchase","product_review_widget_per_page":10,"widget_store_review_label_text":"Review about the store","checkout_comment_extension_title_on_product_page":"Customer Comments","checkout_comment_extension_num_latest_comment_show":5,"checkout_comment_extension_format":"name_and_timestamp","checkout_comment_customer_name":"last_initial","checkout_comment_comment_notification":true,"preview_badge_collection_page_install_preference":false,"preview_badge_home_page_install_preference":false,"preview_badge_product_page_install_preference":false,"review_widget_install_preference":"","review_carousel_install_preference":false,"floating_reviews_tab_install_preference":"none","verified_reviews_count_badge_install_preference":false,"all_reviews_text_install_preference":false,"review_widget_best_location":false,"judgeme_medals_install_preference":false,"review_widget_revamp_enabled":false,"review_widget_qna_enabled":false,"review_widget_header_theme":"minimal","review_widget_widget_title_enabled":true,"review_widget_header_text_size":"medium","review_widget_header_text_weight":"regular","review_widget_average_rating_style":"compact","review_widget_bar_chart_enabled":true,"review_widget_bar_chart_type":"numbers","review_widget_bar_chart_style":"standard","review_widget_expanded_media_gallery_enabled":false,"review_widget_reviews_section_theme":"standard","review_widget_image_style":"thumbnails","review_widget_review_image_ratio":"square","review_widget_stars_size":"medium","review_widget_verified_badge":"standard_text","review_widget_review_title_text_size":"medium","review_widget_review_text_size":"medium","review_widget_review_text_length":"medium","review_widget_number_of_columns_desktop":3,"review_widget_carousel_transition_speed":5,"review_widget_custom_questions_answers_display":"always","review_widget_button_text_color":"#FFFFFF","review_widget_text_color":"#000000","review_widget_lighter_text_color":"#7B7B7B","review_widget_corner_styling":"soft","review_widget_review_word_singular":"review","review_widget_review_word_plural":"reviews","review_widget_voting_label":"Helpful?","review_widget_shop_reply_label":"Reply from {{ shop_name }}:","review_widget_filters_title":"Filters","qna_widget_question_word_singular":"Question","qna_widget_question_word_plural":"Questions","qna_widget_answer_reply_label":"Answer from {{ answerer_name }}:","qna_content_screen_title_text":"Ask a question about this product","qna_widget_question_required_field_error_text":"Please enter your question.","qna_widget_flow_gdpr_statement":"We'll only contact you about your question if necessary. By submitting your question, you agree to our \u003ca href='https://judge.me/terms' target='_blank' rel='nofollow noopener'\u003eterms and conditions\u003c/a\u003e and \u003ca href='https://judge.me/privacy' target='_blank' rel='nofollow noopener'\u003eprivacy policy\u003c/a\u003e.","qna_widget_question_submitted_text":"Thanks for your question!","qna_widget_close_form_text_question":"Close","qna_widget_question_submit_success_text":"We’ll notify you by email when your question is answered.","all_reviews_widget_v2025_enabled":false,"all_reviews_widget_v2025_header_theme":"default","all_reviews_widget_v2025_widget_title_enabled":true,"all_reviews_widget_v2025_header_text_size":"medium","all_reviews_widget_v2025_header_text_weight":"regular","all_reviews_widget_v2025_average_rating_style":"compact","all_reviews_widget_v2025_bar_chart_enabled":true,"all_reviews_widget_v2025_bar_chart_type":"numbers","all_reviews_widget_v2025_bar_chart_style":"standard","all_reviews_widget_v2025_expanded_media_gallery_enabled":false,"all_reviews_widget_v2025_show_store_medals":true,"all_reviews_widget_v2025_show_photo_gallery":true,"all_reviews_widget_v2025_show_review_keywords":false,"all_reviews_widget_v2025_show_ai_summary":false,"all_reviews_widget_v2025_show_ai_summary_bg":false,"all_reviews_widget_v2025_add_search_bar":false,"all_reviews_widget_v2025_default_sort_method":"most-recent","all_reviews_widget_v2025_reviews_per_page":10,"all_reviews_widget_v2025_reviews_section_theme":"default","all_reviews_widget_v2025_image_style":"thumbnails","all_reviews_widget_v2025_review_image_ratio":"square","all_reviews_widget_v2025_stars_size":"medium","all_reviews_widget_v2025_verified_badge":"bold_badge","all_reviews_widget_v2025_review_title_text_size":"medium","all_reviews_widget_v2025_review_text_size":"medium","all_reviews_widget_v2025_review_text_length":"medium","all_reviews_widget_v2025_number_of_columns_desktop":3,"all_reviews_widget_v2025_carousel_transition_speed":5,"all_reviews_widget_v2025_custom_questions_answers_display":"always","all_reviews_widget_v2025_show_product_variant":false,"all_reviews_widget_v2025_show_reviewer_avatar":true,"all_reviews_widget_v2025_reviewer_name_as_initial":"","all_reviews_widget_v2025_review_location_show":false,"all_reviews_widget_v2025_location_format":"","all_reviews_widget_v2025_show_country_flag":false,"all_reviews_widget_v2025_verified_by_shop_badge_style":"light","all_reviews_widget_v2025_social_share":false,"all_reviews_widget_v2025_social_share_options_order":"Facebook,Twitter,LinkedIn,Pinterest","all_reviews_widget_v2025_pagination_type":"standard","all_reviews_widget_v2025_button_text_color":"#FFFFFF","all_reviews_widget_v2025_text_color":"#000000","all_reviews_widget_v2025_lighter_text_color":"#7B7B7B","all_reviews_widget_v2025_corner_styling":"soft","all_reviews_widget_v2025_title":"Customer reviews","all_reviews_widget_v2025_ai_summary_title":"Customers say about this store","all_reviews_widget_v2025_no_review_text":"Be the first to write a review","platform":"shopify","branding_url":"https://app.judge.me/reviews","branding_text":"Powered by Judge.me","locale":"en","reply_name":"Basicoo","widget_version":"3.0","footer":true,"autopublish":false,"review_dates":true,"enable_custom_form":false,"shop_locale":"en","enable_multi_locales_translations":true,"show_review_title_input":false,"review_verification_email_status":"always","can_be_branded":false,"reply_name_text":"Basicoo"};</script> <style class='jdgm-settings-style'>.jdgm-xx{left:0}:root{--jdgm-primary-color: #000;--jdgm-secondary-color: rgba(0,0,0,0.1);--jdgm-star-color: #000;--jdgm-write-review-text-color: white;--jdgm-write-review-bg-color: #000000;--jdgm-paginate-color: #000;--jdgm-border-radius: 0;--jdgm-reviewer-name-color: #000000}.jdgm-histogram__bar-content{background-color:#000}.jdgm-rev[data-verified-buyer=true] .jdgm-rev__icon.jdgm-rev__icon:after,.jdgm-rev__buyer-badge.jdgm-rev__buyer-badge{color:white;background-color:#000}.jdgm-review-widget--small .jdgm-gallery.jdgm-gallery .jdgm-gallery__thumbnail-link:nth-child(8) .jdgm-gallery__thumbnail-wrapper.jdgm-gallery__thumbnail-wrapper:before{content:"See more"}@media only screen and (min-width: 768px){.jdgm-gallery.jdgm-gallery .jdgm-gallery__thumbnail-link:nth-child(8) .jdgm-gallery__thumbnail-wrapper.jdgm-gallery__thumbnail-wrapper:before{content:"See more"}}.jdgm-prev-badge[data-average-rating='0.00']{display:none !important}.jdgm-author-all-initials{display:none !important}.jdgm-author-last-initial{display:none !important}.jdgm-rev-widg__title{visibility:hidden}.jdgm-rev-widg__summary-text{visibility:hidden}.jdgm-prev-badge__text{visibility:hidden}.jdgm-rev__prod-link-prefix:before{content:'about'}.jdgm-rev__variant-label:before{content:'Variant: '}.jdgm-rev__out-of-store-text:before{content:'(out of store)'}@media only screen and (min-width: 768px){.jdgm-rev__pics .jdgm-rev_all-rev-page-picture-separator,.jdgm-rev__pics .jdgm-rev__product-picture{display:none}}@media only screen and (max-width: 768px){.jdgm-rev__pics .jdgm-rev_all-rev-page-picture-separator,.jdgm-rev__pics .jdgm-rev__product-picture{display:none}}.jdgm-preview-badge[data-template="product"]{display:none !important}.jdgm-preview-badge[data-template="collection"]{display:none !important}.jdgm-preview-badge[data-template="index"]{display:none !important}.jdgm-review-widget[data-from-snippet="true"]{display:none !important}.jdgm-verified-count-badget[data-from-snippet="true"]{display:none !important}.jdgm-carousel-wrapper[data-from-snippet="true"]{display:none !important}.jdgm-all-reviews-text[data-from-snippet="true"]{display:none !important}.jdgm-medals-section[data-from-snippet="true"]{display:none !important}.jdgm-ugc-media-wrapper[data-from-snippet="true"]{display:none !important}.jdgm-rev__transparency-badge[data-badge-type="review_collected_via_store_invitation"]{display:none !important}.jdgm-rev__transparency-badge[data-badge-type="review_collected_from_another_provider"]{display:none !important}.jdgm-rev__transparency-badge[data-badge-type="review_collected_from_store_visitor"]{display:none !important}.jdgm-rev__transparency-badge[data-badge-type="review_written_in_etsy"]{display:none !important}.jdgm-rev__transparency-badge[data-badge-type="review_written_in_google_business"]{display:none !important}.jdgm-rev__transparency-badge[data-badge-type="review_written_in_shop_app"]{display:none !important}.jdgm-rev__transparency-badge[data-badge-type="review_earned_for_future_purchase"]{display:none !important}.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__cards-container .jdgm-rev-snippet-card{border-radius:8px;background:#fff}.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__cards-container .jdgm-rev-snippet-card__rev-rating .jdgm-star{color:#108474}.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__prev-btn,.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__next-btn{border-radius:50%;background:#fff}.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__prev-btn>svg,.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__next-btn>svg{fill:#000}.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jm-mfp-content,.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev__icon,.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev__pic-img,.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev__reply{border-radius:8px}.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev[data-verified-buyer="true"] .jdgm-full-rev__icon::after{border-radius:8px}.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev .jdgm-rev__buyer-badge{border-radius:calc( 8px / 2 )}.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev .jdgm-full-rev__replier::before{content:'Basicoo'}.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev .jdgm-full-rev__product-button{border-radius:calc( 8px * 6 )}
 </style> <style class='jdgm-settings-style'></style>
@@ -765,7 +765,7 @@ parseFloat(jdgmSettings.widget_version)>=3?jdgm.loadCSS(jdgm.CDN_BASE_URL+"widge
 jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL+"shopify_v2.css")
 )}))}(document);
 </script>
-<noscript><link rel="stylesheet" type="text/css" media="all" href="cdn.shopify.com/extensions/01a11176-2280-7862-971a-b99c4fd1084c/judgeme-773/assets/shopify_v2.css"></noscript>
+<noscript></noscript>
 
 <!-- BEGIN app snippet: theme_fix_tags --><script>
   (function() {
@@ -822,7 +822,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
 
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/kwik-cod-checkout/blocks/app-embed/74f36c20-677c-4aa2-b179-1769aa61abaa --><script src="https://pdp.gokwik.co/sa-login-ui/gokwik-sso-sdk.js" defer></script>
+<!-- END app block --><!-- BEGIN app block: shopify://apps/kwik-cod-checkout/blocks/app-embed/74f36c20-677c-4aa2-b179-1769aa61abaa -->
 
 <script>
   function getCookie(cookieName) {
@@ -1058,9 +1058,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
 </script>
 
 
-<!-- END app block --><script src="cdn.shopify.com/extensions/01a0ec21-7369-78a6-b9c0-c07227d664ec/lb-upsell-451/assets/lb-selleasy.js" type="text/javascript" defer="defer"></script>
-<script src="cdn.shopify.com/extensions/01a11176-2280-7862-971a-b99c4fd1084c/judgeme-773/assets/loader.js" type="text/javascript" defer="defer"></script>
-<link href="https://monorail-edge.shopifysvc.com/" rel="dns-prefetch">
+<!-- END app block -->
+
+
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 65026785347,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script>
   window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
@@ -1219,11 +1219,11 @@ script.onerror = function(e) {
 
   };
   scriptFallback.async = true;
-  scriptFallback.src = 'cdn/s/trekkie.storefront.2f6d7d7ede7d24234881a9cd5f47e679642fa1f6.min.js';
+  scriptFallback.src = 'assets/js/trekkie.storefront.2f6d7d7ede7d24234881a9cd5f47e679642fa1f6.min.js';
   first.parentNode.insertBefore(scriptFallback, first);
 };
 script.async = true;
-script.src = 'cdn/s/trekkie.storefront.2f6d7d7ede7d24234881a9cd5f47e679642fa1f6.min.js';
+script.src = 'assets/js/trekkie.storefront.2f6d7d7ede7d24234881a9cd5f47e679642fa1f6.min.js';
 first.parentNode.insertBefore(script, first);
 
     };
@@ -1258,24 +1258,7 @@ first.parentNode.insertBefore(script, first);
     eventsListenerScript.src = "cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js";
     document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
 })();</script>
-<script
-  defer
-  src="cdn/shopifycloud/perf-kit/shopify-perf-kit-3.9.6.min.js"
-  data-application="storefront-renderer"
-  data-shop-id="65026785347"
-  data-render-region="gcp-asia-southeast1"
-  data-page-type="index"
-  data-theme-instance-id="137379938371"
-  data-theme-name="Drop"
-  data-theme-version="5.0.0"
-  data-monorail-region="shop_domain"
-  data-resource-timing-sampling-rate="10"
-  data-shs="true"
-  data-shs-beacon="true"
-  data-shs-export-with-fetch="true"
-  data-shs-logs-sample-rate="1"
-  data-shs-beacon-endpoint="https://basicoo.com/api/collect"
-></script>
+
 <script id="shopify-chat-page-data" type="application/json">{"greetingMessage":"Welcome to Basicoo. How can I help?","customerServiceEmail":"shaileshstartup@gmail.com","onlineStorePasswordProtected":false,"continueAsChip":false,"exportCommand":false,"shopName":"Basicoo","translations":[{"key":"agent_chat.panel.open_chat","value":"Open chat"},{"key":"agent_chat.panel.ask_anything","value":"Ask anything"},{"key":"agent_chat.panel.title","value":"Storekick"},{"key":"agent_chat.panel.unread_replies","value":"Unread replies"},{"key":"agent_chat.panel.back_to_chat","value":"Back to chat"},{"key":"agent_chat.panel.see_history","value":"See chat history"},{"key":"agent_chat.panel.new_chat","value":"Create a new chat"},{"key":"agent_chat.panel.close","value":"Close chat"},{"key":"agent_chat.panel.undock","value":"Undock chat"},{"key":"agent_chat.panel.dock","value":"Dock chat"},{"key":"agent_chat.panel.expand","value":"Expand chat"},{"key":"agent_chat.panel.contract","value":"Contract chat"},{"key":"agent_chat.panel.jump_to_latest","value":"Jump to latest"},{"key":"agent_chat.panel.loading_chat","value":"Loading chat"},{"key":"agent_chat.input.label","value":"Type your message"},{"key":"agent_chat.input.placeholder","value":"Ask anything..."},{"key":"agent_chat.input.send","value":"Send"},{"key":"agent_chat.input.stop","value":"Stop generating"},{"key":"agent_chat.thinking","value":"Thinking..."},{"key":"agent_chat.first_response_delayed","value":"Agent is taking longer to respond…"},{"key":"agent_chat.searching","value":"Searching..."},{"key":"agent_chat.message.sent_timestamp","value":"Sent · {{time}}"},{"key":"agent_chat.message.automated_label","value":"Automated"},{"key":"agent_chat.message.automated_timestamp","value":"Automated · {{time}}"},{"key":"agent_chat.liveAgentHandoff","value":"Someone from our team will be with you shortly"},{"key":"agent_chat.human_handoff.action","value":"Chat with our team"},{"key":"agent_chat.human_handoff.request","value":"I’d like to talk to someone from your team"},{"key":"agent_chat.human_handoff.ai_assistant","value":"AI assistant"},{"key":"agent_chat.greeting.default","value":"Hi there!"},{"key":"agent_chat.greeting.with_name","value":"Hi {{name}}!"},{"key":"agent_chat.greeting.welcome","value":"You can ask questions about shopping, sizing\/dimensions, shipping, returns, or order status."},{"key":"agent_chat.greeting.welcome_back","value":"Welcome back to %{shop_name}! How can I help?"},{"key":"agent_chat.greeting.welcome_back_no_shop","value":"Welcome back! How can I help?"},{"key":"agent_chat.greeting.welcome_to_shop","value":"Welcome to %{shop_name}. How can I help?"},{"key":"agent_chat.greeting.generic","value":"How can I help?"},{"key":"agent_chat.disclaimer.text","value":"This chat is powered by AI from Shopify and may make mistakes. Your messages are visible to {{shop_name}}. See"},{"key":"agent_chat.disclaimer.text_human","value":"Your messages are visible to {{shop_name}} and to Shopify for the provision and improvement of the services. See"},{"key":"agent_chat.disclaimer.link_text","value":"privacy policy"},{"key":"agent_chat.error.response_unavailable","value":"Response unavailable"},{"key":"agent_chat.error.generic","value":"Something went wrong."},{"key":"agent_chat.error.response_failed","value":"Couldn’t load this message"},{"key":"agent_chat.error.message_send_failed","value":"Your message couldn’t be sent"},{"key":"agent_chat.error.attachment_upload_failed","value":"Your attachment didn’t upload"},{"key":"agent_chat.error.first_response_stalled","value":"Agent couldn’t respond"},{"key":"agent_chat.error.try_again","value":"Try again"},{"key":"agent_chat.error.unavailable","value":"Chat isn't available right now - try again later"},{"key":"agent_chat.error.usage_limit","value":"Message limit reached — try again later or email us at {{email}}"},{"key":"agent_chat.error.usage_limit_no_email","value":"Message limit reached — try again later"},{"key":"agent_chat.error.cost_quota_unhandled","value":"Chat isn’t available right now—email us at {{email}}"},{"key":"agent_chat.error.cost_quota_unhandled_no_email","value":"Chat isn’t available right now"},{"key":"agent_chat.error.cost_quota_handover","value":"AI assistant isn’t available right now — our team will reply shortly"},{"key":"agent_chat.history.heading","value":"Chat history"},{"key":"agent_chat.history.loading","value":"Loading conversation history"},{"key":"agent_chat.history.aria_label","value":"Conversation history"},{"key":"agent_chat.history.no_conversations","value":"No conversations"},{"key":"agent_chat.history.conversation.one","value":"conversation"},{"key":"agent_chat.history.conversation.other","value":"conversations"},{"key":"agent_chat.history.error_message","value":"Something went wrong."},{"key":"agent_chat.history.try_again","value":"Try again"},{"key":"agent_chat.history.no_past","value":"No past conversations"},{"key":"agent_chat.history.start_new","value":"Start a new chat"},{"key":"agent_chat.history.untitled","value":"Untitled conversation"},{"key":"agent_chat.history.resume","value":"Resume: {{title}}"},{"key":"agent_chat.history.resume_with_time","value":"Resume: {{title}}, {{time}}"},{"key":"agent_chat.history.delete","value":"Delete conversation: {{title}}"},{"key":"agent_chat.history.delete_failed","value":"Could not delete conversation"},{"key":"agent_chat.feedback.group_label","value":"Message feedback"},{"key":"agent_chat.feedback.thumbs_up","value":"Thumbs up"},{"key":"agent_chat.feedback.thumbs_down","value":"Thumbs down"},{"key":"agent_chat.feedback.add_comment","value":"Add comment"},{"key":"agent_chat.feedback.thanks","value":"Thanks for your feedback"},{"key":"agent_chat.feedback.placeholder_up","value":"Tell us what went well"},{"key":"agent_chat.feedback.placeholder_down","value":"Tell us what could have been better"},{"key":"agent_chat.feedback.comment_label","value":"Feedback comment"},{"key":"agent_chat.feedback.cancel","value":"Cancel"},{"key":"agent_chat.feedback.submit","value":"Submit"},{"key":"agent_chat.feedback.character_count","value":"{{current}}\/{{max}}"},{"key":"agent_chat.feedback.character_limit_reached","value":"Maximum length reached. Feedback is limited to {{max}} characters."},{"key":"agent_chat.buyer_profile.button.open","value":"Buyer Profile"},{"key":"agent_chat.buyer_profile.title","value":"Buyer Profile"},{"key":"agent_chat.buyer_profile.empty","value":"No buyer profile available."},{"key":"agent_chat.buyer_profile.close","value":"Close"},{"key":"agent_chat.suggestions.empty_state_label","value":"Suggested questions"},{"key":"agent_chat.suggestions.quick_reply_label","value":"Suggested replies"},{"key":"agent_chat.auth.sign_in_to_continue","value":"Sign in to continue"},{"key":"agent_chat.auth.sign_in","value":"Sign in"},{"key":"agent_chat.auth.skip_and_chat","value":"Skip and start chatting"},{"key":"agent_chat.auth.pre_chat_title","value":"Sign in to personalize and save your chats"},{"key":"agent_chat.auth.pre_chat_subtitle","value":"Sign in or create an account"},{"key":"agent_chat.auth.staff_chat_required_title","value":"Don't miss a reply"},{"key":"agent_chat.auth.staff_chat_required_subtitle","value":"Sign in to chat with our team. We'll email you if you leave the chat."},{"key":"agent_chat.auth.share_disclaimer","value":"By continuing, Shop will share your name and email with this store. See their {{terms_link}} and {{privacy_link}}"},{"key":"agent_chat.auth.terms_link","value":"terms"},{"key":"agent_chat.auth.privacy_link","value":"privacy policy"},{"key":"agent_chat.auth.declined_pre_chat","value":"I can’t connect you with the store unless you sign in."},{"key":"agent_chat.reply_by_email.continuation_prompt","value":"If you leave the chat, we’ll email you when there’s a reply."},{"key":"agent_chat.reply_by_email.sign_in_prompt","value":"Sign in to get emailed when there’s a reply."},{"key":"agent_chat.order_lookup.track_order","value":"Track my order"},{"key":"agent_chat.order_lookup.track_another_order","value":"Track another order"},{"key":"agent_chat.order_lookup.new_conversation","value":"New conversation"},{"key":"agent_chat.order_lookup.follow_up_label","value":"Order lookup actions"},{"key":"agent_chat.order_lookup.enter_order_information","value":"Enter order information"},{"key":"agent_chat.order_lookup.prompt","value":"To see your order status, please provide your order details."},{"key":"agent_chat.order_lookup.form_title","value":"Track my order"},{"key":"agent_chat.order_lookup.form_subtitle","value":"Please provide your information."},{"key":"agent_chat.order_lookup.order_number_label","value":"Order number"},{"key":"agent_chat.order_lookup.email_label","value":"Email address"},{"key":"agent_chat.order_lookup.submit","value":"Track my order"},{"key":"agent_chat.order_lookup.cancel","value":"Cancel"},{"key":"agent_chat.order_lookup.invalid_order_number","value":"Please enter a valid order number with only numbers and letters, no spaces (e.g. 1006)."},{"key":"agent_chat.order_lookup.invalid_order_number_whitespace","value":"Please enter a valid order number with only numbers and letters, no spaces (e.g. 1006)."},{"key":"agent_chat.order_lookup.invalid_email","value":"Please enter a valid email address"},{"key":"agent_chat.order_lookup.generic_error","value":"There was a problem looking up your order. Please try again."},{"key":"agent_chat.order_lookup.rate_limited_error","value":"Too many attempts. Try again later."},{"key":"agent_chat.order_lookup.locked_composer_status","value":"Order lookup is in progress. Start a new conversation to ask something else."},{"key":"agent_chat.legacy_contact.form_title","value":"Before we get started"},{"key":"agent_chat.legacy_contact.form_subtitle","value":"Please provide your information so we can reply to you if you leave the chat."},{"key":"agent_chat.legacy_contact.first_name_label","value":"First name"},{"key":"agent_chat.legacy_contact.last_name_label","value":"Last name"},{"key":"agent_chat.legacy_contact.email_label","value":"Email"},{"key":"agent_chat.legacy_contact.marketing_opt_in","value":"Email me with news and offers"},{"key":"agent_chat.legacy_contact.submit","value":"Start chat"},{"key":"agent_chat.legacy_contact.cancel","value":"Cancel"},{"key":"agent_chat.legacy_contact.invalid_first_name","value":"Enter a valid first name."},{"key":"agent_chat.legacy_contact.invalid_last_name","value":"Enter a valid last name."},{"key":"agent_chat.legacy_contact.invalid_email","value":"Enter a valid email address."},{"key":"agent_chat.legacy_contact.invalid_email_length","value":"Email address is too long."},{"key":"agent_chat.legacy_contact.generic_error","value":"Something went wrong."},{"key":"agent_chat.legacy_contact.rate_limited_error","value":"Too many attempts. Try again later."},{"key":"agent_chat.discountCard.useDiscount","value":"Use discount"},{"key":"agent_chat.discountCard.discountApplicationContext","value":"Applies automatically at checkout"},{"key":"agent_chat.cart.checkout","value":"Checkout"},{"key":"agent_chat.product.add_to_cart","value":"Add to cart"},{"key":"agent_chat.product.view_details","value":"View details"},{"key":"agent_chat.product.out_of_stock","value":"Out of stock"},{"key":"agent_chat.product.compare_suggestions","value":"Compare suggestions"},{"key":"agent_chat.product.hide_suggestions","value":"Hide suggestions"},{"key":"agent_chat.product.sold_out","value":"Sold out"},{"key":"agent_chat.order.item.one","value":"item"},{"key":"agent_chat.order.item.other","value":"items"},{"key":"agent_chat.order.less_items.one","value":"- hide {{count}} item"},{"key":"agent_chat.order.less_items.other","value":"- hide {{count}} items"},{"key":"agent_chat.order.more_items.one","value":"+ {{count}} more item"},{"key":"agent_chat.order.more_items.other","value":"+ {{count}} more items"},{"key":"agent_chat.order.view_order","value":"View order {{orderId}}"},{"key":"agent_chat.order.track_shipment","value":"Track shipment"},{"key":"agent_chat.order.of_total","value":"{{index}} of {{total}}"},{"key":"agent_chat.order.label","value":"Order {{number}}"},{"key":"agent_chat.order.count.one","value":"{{count}} Order"},{"key":"agent_chat.order.count.other","value":"{{count}} Orders"},{"key":"agent_chat.order.ordered_on","value":"Ordered {{date}}"},{"key":"agent_chat.order.select","value":"Select order {{number}}"},{"key":"agent_chat.return.heading","value":"Select items to return"},{"key":"agent_chat.return.toggle_item","value":"Select {{name}}"},{"key":"agent_chat.return.select_item_non_returnable","value":"{{name}}, not returnable"},{"key":"agent_chat.return.quantity_label","value":"Return quantity"},{"key":"agent_chat.return.reason_label","value":"Reason for return"},{"key":"agent_chat.return.reason_placeholder","value":"Select a reason"},{"key":"agent_chat.return.confirm","value":"Request return"},{"key":"agent_chat.return.confirmed","value":"Return requested"},{"key":"agent_chat.return.reason.size_too_small","value":"Size too small"},{"key":"agent_chat.return.reason.size_too_large","value":"Size too large"},{"key":"agent_chat.return.reason.unwanted","value":"Unwanted"},{"key":"agent_chat.return.reason.not_as_described","value":"Not as described"},{"key":"agent_chat.return.reason.wrong_item","value":"Wrong item"},{"key":"agent_chat.return.reason.defective","value":"Defective"},{"key":"agent_chat.return.reason.style","value":"Style"},{"key":"agent_chat.return.reason.color","value":"Color"},{"key":"agent_chat.return.reason.other_reason","value":"Other"},{"key":"agent_chat.scroll.previous","value":"Previous"},{"key":"agent_chat.scroll.next","value":"Next"}]}</script>
 <script id="shopify-customer-account-data" type="application/json">{"customer":null,"shop":{"id":"65026785347","customerAccountTranslations":[{"key":"account_menu.signed_out_state.sheet_title","value":"Sign in or create account"},{"key":"account_menu.signed_out_state.section_divider","value":"More ways to sign in"},{"key":"account_menu.signed_out_state.alternate_divider","value":"OR"},{"key":"account_menu.signed_out_state.email_field_label","value":"Email"},{"key":"account_menu.signed_out_state.orders_button","value":"Orders"},{"key":"account_menu.signed_out_state.profile_button","value":"Profile"},{"key":"account_menu.signed_out_state.shop_login_button","value":"Sign in with Shop"},{"key":"account_menu.signed_out_state.continue_with_google","value":"Continue with Google"},{"key":"account_menu.signed_out_state.continue_with_facebook","value":"Continue with Facebook"},{"key":"account_menu.signed_out_state.marketing_consent_label","value":"Email me with news and offers"},{"key":"account_menu.signed_in_state.greeting_with_name","value":"Hi, {{first_name}}"},{"key":"account_menu.signed_in_state.greeting_without_name","value":"Account"},{"key":"account_menu.signed_in_state.orders_button","value":"Orders"},{"key":"account_menu.signed_in_state.profile_button","value":"Profile"},{"key":"account_menu.location_picker.sheet_title","value":"Locations"},{"key":"account_menu.location_picker.search_field_placeholder","value":"Search"},{"key":"account_menu.aria_labels.close_menu","value":"Close menu"},{"key":"account_menu.aria_labels.back_to_main_menu","value":"Back to main menu from {{title}}"},{"key":"account_menu.aria_labels.open_submenu","value":"{{title}}, opens submenu"},{"key":"account_menu.aria_labels.loading_menu","value":"Loading menu"},{"key":"account_menu.aria_labels.account","value":"Account"},{"key":"account_menu.aria_labels.sign_in_with_email","value":"Sign in with email"},{"key":"account_menu.aria_labels.sign_in","value":"Sign in"}],"socialLoginProviders":[{"handle":"Shop"}],"legacyCustomerAccounts":false,"signInLinksVisible":true,"b2bEnabled":false,"marketingConsentSigninEnabled":true,"marketingConsentPreselected":true},"visitor":{"country":"IN","language":"en"}}</script>
 <meta name="shopify-y" content="cc61c6b6-7eea-47d0-8e42-ad0d49c246e1" data-expiration="1822866640000"><meta name="shopify-s" content="28a73714-221e-4193-aaf8-3f3f8a5fdc88" data-expiration="1791310840000"><meta name="new-cookie-storage-activated" content="t">
@@ -1288,11 +1271,11 @@ first.parentNode.insertBefore(script, first);
 
   <aside class="slideout slideout__drawer-left" data-wau-slideout="mobile-navigation" id="slideout-mobile-navigation">
     <div id="shopify-section-mobile-navigation" class="shopify-section">
-<link href="cdn/shop/t/4/assets/section-mobile-navigation08b9.css?v=28434716344381522961756554113" rel="stylesheet" type="text/css" media="all" />
-<link href="cdn/shop/t/4/assets/component-accordionse71e.css?v=40758733350006149661756554113" rel="stylesheet" type="text/css" media="all" />
-<link href="cdn/shop/t/4/assets/component-slideoutsf802.css?v=48682832462950893321756554113" rel="stylesheet" type="text/css" media="all" />
-<link href="cdn/shop/t/4/assets/component-modalse195.css?v=179026747475194314131756554113" rel="stylesheet" type="text/css" media="all" />
-<script src="cdn/shop/t/4/assets/section-mobile-navigationa2ac.js?v=167925835220014844731756554113" defer></script>
+<link href="assets/css/section-mobile-navigation.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/component-accordions.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/component-slideouts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/component-modals.css" rel="stylesheet" type="text/css" media="all" />
+<script src="assets/js/section-mobile-navigation.js" defer></script>
 
 
 <div
@@ -1418,7 +1401,7 @@ first.parentNode.insertBefore(script, first);
         
       
         
-            <link href="cdn/shop/t/4/assets/component-product-gridb3c4.css?v=151795688062861213921756554113" rel="stylesheet" type="text/css" media="all" />
+            <link href="assets/css/component-product-grid.css" rel="stylesheet" type="text/css" media="all" />
             <div class="mobile-menu__block mobile-menu__featured-collection span-12 auto pb2 mb3" >
               <div class="grid__wrapper edge">
                 <p class="featured_collection_block--title span-12 auto">Best Selling Products</p>
@@ -1447,10 +1430,10 @@ first.parentNode.insertBefore(script, first);
   
   
 <div class="box-ratio " style="padding-bottom: 133.92857142857142%;">
-    <img src="cdn/shop/files/object-remover-result-17851900661582ff2.png?v=1785190077" alt="" srcset="cdn/shop/files/object-remover-result-178519006615831dd.png?v=1785190077&amp;width=200 200w, cdn/shop/files/object-remover-result-17851900661580c2f.png?v=1785190077&amp;width=300 300w, cdn/shop/files/object-remover-result-1785190066158635d.png?v=1785190077&amp;width=400 400w, cdn/shop/files/object-remover-result-17851900661586c6d.png?v=1785190077&amp;width=500 500w, cdn/shop/files/object-remover-result-17851900661587397.png?v=1785190077&amp;width=600 600w, cdn/shop/files/object-remover-result-17851900661582ff3.png?v=1785190077&amp;width=700 700w, cdn/shop/files/object-remover-result-178519006615810dc.png?v=1785190077&amp;width=800 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 4),(min-width: 768px) and (max-width: 1600px) calc(100vw / 4),(max-width: 767px) calc(100vw / 2), 900px" style="">
+    <img src="assets/img/object-remover-result-17851900661582ff2.png" alt="" srcset="assets/img/object-remover-result-178519006615831dd.png 200w, assets/img/object-remover-result-17851900661580c2f.png 300w, assets/img/object-remover-result-1785190066158635d.png 400w, assets/img/object-remover-result-17851900661586c6d.png 500w, assets/img/object-remover-result-17851900661587397.png 600w, assets/img/object-remover-result-17851900661582ff3.png 700w, assets/img/object-remover-result-178519006615810dc.png 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 4),(min-width: 768px) and (max-width: 1600px) calc(100vw / 4),(max-width: 767px) calc(100vw / 2), 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/object-remover-result-17851900661582ff2.png?v=1785190077" alt="" srcset="cdn/shop/files/object-remover-result-17851900661585955.png?v=1785190077&amp;width=352 352w, cdn/shop/files/object-remover-result-1785190066158dd50.png?v=1785190077&amp;width=832 832w, cdn/shop/files/object-remover-result-1785190066158b033.png?v=1785190077&amp;width=896 896w" width="896" height="1200">
+      <img src="assets/img/object-remover-result-17851900661582ff2.png" alt="" srcset="assets/img/object-remover-result-17851900661585955.png 352w, assets/img/object-remover-result-1785190066158dd50.png 832w, assets/img/object-remover-result-17851900661582ff2.png 896w" width="896" height="1200">
 
     </noscript>
   </div>
@@ -1511,10 +1494,10 @@ first.parentNode.insertBefore(script, first);
   
   
 <div class="box-ratio " style="padding-bottom: 133.92857142857142%;">
-    <img src="cdn/shop/files/object-remover-result-1785189032677dc96.png?v=1785189044" alt="" srcset="cdn/shop/files/object-remover-result-17851890326772d00.png?v=1785189044&amp;width=200 200w, cdn/shop/files/object-remover-result-1785189032677df62.png?v=1785189044&amp;width=300 300w, cdn/shop/files/object-remover-result-1785189032677ae6f.png?v=1785189044&amp;width=400 400w, cdn/shop/files/object-remover-result-178518903267764f3.png?v=1785189044&amp;width=500 500w, cdn/shop/files/object-remover-result-17851890326770ee2.png?v=1785189044&amp;width=600 600w, cdn/shop/files/object-remover-result-17851890326775f56.png?v=1785189044&amp;width=700 700w, cdn/shop/files/object-remover-result-178518903267734ca.png?v=1785189044&amp;width=800 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 4),(min-width: 768px) and (max-width: 1600px) calc(100vw / 4),(max-width: 767px) calc(100vw / 2), 900px" style="">
+    <img src="assets/img/object-remover-result-1785189032677dc96.png" alt="" srcset="assets/img/object-remover-result-17851890326772d00.png 200w, assets/img/object-remover-result-1785189032677df62.png 300w, assets/img/object-remover-result-1785189032677ae6f.png 400w, assets/img/object-remover-result-178518903267764f3.png 500w, assets/img/object-remover-result-17851890326770ee2.png 600w, assets/img/object-remover-result-17851890326775f56.png 700w, assets/img/object-remover-result-178518903267734ca.png 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 4),(min-width: 768px) and (max-width: 1600px) calc(100vw / 4),(max-width: 767px) calc(100vw / 2), 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/object-remover-result-1785189032677dc96.png?v=1785189044" alt="" srcset="cdn/shop/files/object-remover-result-178518903267730d9.png?v=1785189044&amp;width=352 352w, cdn/shop/files/object-remover-result-1785189032677d72e.png?v=1785189044&amp;width=832 832w, cdn/shop/files/object-remover-result-178518903267708fd.png?v=1785189044&amp;width=896 896w" width="896" height="1200">
+      <img src="assets/img/object-remover-result-1785189032677dc96.png" alt="" srcset="assets/img/object-remover-result-178518903267730d9.png 352w, assets/img/object-remover-result-1785189032677d72e.png 832w, assets/img/object-remover-result-1785189032677dc96.png 896w" width="896" height="1200">
 
     </noscript>
   </div>
@@ -1639,10 +1622,10 @@ first.parentNode.insertBefore(script, first);
   
   
 <div class="box-ratio " style="padding-bottom: 133.92857142857142%;">
-    <img src="cdn/shop/files/object-remover-result-178518835231471d5.png?v=1785188439" alt="" srcset="cdn/shop/files/object-remover-result-1785188352314ddc8.png?v=1785188439&amp;width=200 200w, cdn/shop/files/object-remover-result-1785188352314830b.png?v=1785188439&amp;width=300 300w, cdn/shop/files/object-remover-result-1785188352314c223.png?v=1785188439&amp;width=400 400w, cdn/shop/files/object-remover-result-17851883523143582.png?v=1785188439&amp;width=500 500w, cdn/shop/files/object-remover-result-1785188352314955a.png?v=1785188439&amp;width=600 600w, cdn/shop/files/object-remover-result-17851883523143bc3.png?v=1785188439&amp;width=700 700w, cdn/shop/files/object-remover-result-17851883523147bbb.png?v=1785188439&amp;width=800 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 4),(min-width: 768px) and (max-width: 1600px) calc(100vw / 4),(max-width: 767px) calc(100vw / 2), 900px" style="">
+    <img src="assets/img/object-remover-result-178518835231471d5.png" alt="" srcset="assets/img/object-remover-result-1785188352314ddc8.png 200w, assets/img/object-remover-result-1785188352314830b.png 300w, assets/img/object-remover-result-1785188352314c223.png 400w, assets/img/object-remover-result-17851883523143582.png 500w, assets/img/object-remover-result-1785188352314955a.png 600w, assets/img/object-remover-result-17851883523143bc3.png 700w, assets/img/object-remover-result-17851883523147bbb.png 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 4),(min-width: 768px) and (max-width: 1600px) calc(100vw / 4),(max-width: 767px) calc(100vw / 2), 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/object-remover-result-178518835231471d5.png?v=1785188439" alt="" srcset="cdn/shop/files/object-remover-result-178518835231406ad.png?v=1785188439&amp;width=352 352w, cdn/shop/files/object-remover-result-1785188352314ea54.png?v=1785188439&amp;width=832 832w, cdn/shop/files/object-remover-result-1785188352314c531.png?v=1785188439&amp;width=896 896w" width="896" height="1200">
+      <img src="assets/img/object-remover-result-178518835231471d5.png" alt="" srcset="assets/img/object-remover-result-178518835231406ad.png 352w, assets/img/object-remover-result-1785188352314ea54.png 832w, assets/img/object-remover-result-1785188352314c531.png 896w" width="896" height="1200">
 
     </noscript>
   </div>
@@ -1773,7 +1756,7 @@ first.parentNode.insertBefore(script, first);
   <main id="main-content" class="site-wrap section-fade-in" role="main" tabindex="-1">
     <!-- BEGIN sections: header-group -->
 <div id="shopify-section-sections--17640062582851__announcement-bar" class="shopify-section shopify-section-group-header-group js-site-announcement-bar">
-<link href="cdn/shop/t/4/assets/section-announcement-bare0a6.css?v=10005262173065723941756554113" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/section-announcement-bar.css" rel="stylesheet" type="text/css" media="all" />
 
 
 
@@ -1786,7 +1769,7 @@ first.parentNode.insertBefore(script, first);
 
 <div class="section-top-bar__wrapper js-top-bar color-scheme-3"
   data-section-id="sections--17640062582851__announcement-bar"
-  data-asset-url="cdn/shop/t/4/assets/carousel49c7.js?v=66590362729264336851756554113"
+  data-asset-url="assets/js/carousel.js"
   data-section-type="carousel">
   <div class="grid__wrapper c0 py3"><div class="section-top-bar__text a-center span-12 sm-span-12 auto v-center js-carousel" data-flickity='{
     "wrapAround":true,
@@ -1808,14 +1791,14 @@ first.parentNode.insertBefore(script, first);
 </div>
 
 </div><div id="shopify-section-sections--17640062582851__header" class="shopify-section shopify-section-group-header-group js-site-header">
-<link href="cdn/shop/t/4/assets/section-header68da.css?v=83585766091390201941756554113" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/section-header.css" rel="stylesheet" type="text/css" media="all" />
 
 
 
 <header class="section-header header-section no-section-animation header__over-content--true color-scheme-1"
   data-section-id="sections--17640062582851__header"
   data-section-type="header"
-  data-asset-url="cdn/shop/t/4/assets/section-headera607.js?v=67786876842646414511756554113">
+  data-asset-url="assets/js/section-header.js">
 
   <section class="section-header__main-bar main-bar w100 sm-hide py3 js-theme-header stickynav" js-stickynav>
     <div class="grid__wrapper inline-layout">
@@ -1862,7 +1845,7 @@ first.parentNode.insertBefore(script, first);
   <article class="header-inline__logo-wrapper span-6 auto auto v-center a-left">
     <div class="site-logo header__logo-wrapper relative lh0 a-center">
       
-        <a class="header__img-logo inline-block lh0 mb0 shrink-wrap" href="index.html"><img src="cdn/shop/files/Untitled_1920_x_400_px8726.png?v=1756231535&amp;width=800" loading="eager" fetchpriority="high" alt="Basicoo"></a>
+        <a class="header__img-logo inline-block lh0 mb0 shrink-wrap" href="index.html"><img src="assets/img/Untitled_1920_x_400_px8726.png" loading="eager" fetchpriority="high" alt="Basicoo"></a>
       
     </div>
   </article>
@@ -2054,7 +2037,7 @@ first.parentNode.insertBefore(script, first);
       </label><div
         id="predictiveSearch"
         data-section-type="predictive-search"
-        data-asset-url="cdn/shop/t/4/assets/section-predictive-searchc010.js?v=178891737383213728471756554113"
+        data-asset-url="assets/js/section-predictive-search.js"
         data-routes="/search/suggest"
         data-input-selector='input[name="q"]'
         data-results-selector="#predictive-search"
@@ -2106,7 +2089,7 @@ first.parentNode.insertBefore(script, first);
       <div class="site-logo mobile-nav__logo-wrapper span-6 md-span-6 sm-span-6 auto a-center v-center shrink-wrap">
         
           <a class="mobile-nav__img-logo inline-block lh0 mb0 shrink-wrap" href="index.html">
-            <img src="cdn/shop/files/Untitled_1920_x_400_px8726.png?v=1756231535&amp;width=800" alt="Basicoo" srcset="cdn/shop/files/Untitled_1920_x_400_pxda74.png?v=1756231535&amp;width=352 352w, cdn/shop/files/Untitled_1920_x_400_px8726.png?v=1756231535&amp;width=800 800w" width="800" height="167" loading="eager" fetchpriority="high" class="py1">
+            <img src="assets/img/Untitled_1920_x_400_px8726.png" alt="Basicoo" srcset="assets/img/Untitled_1920_x_400_pxda74.png 352w, assets/img/Untitled_1920_x_400_px8726.png 800w" width="800" height="167" loading="eager" fetchpriority="high" class="py1">
           </a>
         
       </div>
@@ -3296,14 +3279,14 @@ first.parentNode.insertBefore(script, first);
     <div class="page-wrap">
       
       <section id="shopify-section-template--17640062222403__slideshow_HYbqBk" class="shopify-section dynamic-section">
-<link href="cdn/shop/t/4/assets/section-slideshowae2c.css?v=75200571336355579281756554113" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/section-slideshow.css" rel="stylesheet" type="text/css" media="all" />
 
 
 
 <div
 class="global__section section-slideshow pt0 pb0"
 data-section-id="template--17640062222403__slideshow_HYbqBk"
-data-asset-url="cdn/shop/t/4/assets/carousel49c7.js?v=66590362729264336851756554113"
+data-asset-url="assets/js/carousel.js"
 
   data-section-loaded="false"
 
@@ -3350,10 +3333,10 @@ data-section-type="carousel">
   
   
 <div class="box-ratio " style="padding-bottom: 56.25%;">
-    <img src="cdn/shop/files/Copy_of_Collection_1e594.jpg?v=1785187974" alt="" srcset="cdn/shop/files/Copy_of_Collection_11f3f.jpg?v=1785187974&amp;width=200 200w, cdn/shop/files/Copy_of_Collection_185c9.jpg?v=1785187974&amp;width=300 300w, cdn/shop/files/Copy_of_Collection_16e1e.jpg?v=1785187974&amp;width=400 400w, cdn/shop/files/Copy_of_Collection_1e7c6.jpg?v=1785187974&amp;width=500 500w, cdn/shop/files/Copy_of_Collection_14752.jpg?v=1785187974&amp;width=600 600w, cdn/shop/files/Copy_of_Collection_13fe9.jpg?v=1785187974&amp;width=700 700w, cdn/shop/files/Copy_of_Collection_1475f.jpg?v=1785187974&amp;width=800 800w, cdn/shop/files/Copy_of_Collection_1b314.jpg?v=1785187974&amp;width=1000 1000w, cdn/shop/files/Copy_of_Collection_12080.jpg?v=1785187974&amp;width=1200 1200w, cdn/shop/files/Copy_of_Collection_1dd46.jpg?v=1785187974&amp;width=1400 1400w, cdn/shop/files/Copy_of_Collection_1efce.jpg?v=1785187974&amp;width=1600 1600w, cdn/shop/files/Copy_of_Collection_1ef11.jpg?v=1785187974&amp;width=1800 1800w, cdn/shop/files/Copy_of_Collection_1d496.jpg?v=1785187974&amp;width=2000 2000w, cdn/shop/files/Copy_of_Collection_1ebed.jpg?v=1785187974&amp;width=2200 2200w, cdn/shop/files/Copy_of_Collection_1b1c4.jpg?v=1785187974&amp;width=2400 2400w, cdn/shop/files/Copy_of_Collection_1e991.jpg?v=1785187974&amp;width=2600 2600w, cdn/shop/files/Copy_of_Collection_17e65.jpg?v=1785187974&amp;width=2800 2800w, cdn/shop/files/Copy_of_Collection_14783.jpg?v=1785187974&amp;width=3000 3000w" width="4096" height="2304" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) 100vw,(min-width: 768px) and (max-width: 1600px) 100vw,(max-width: 767px) 100vw, 900px" style="">
+    <img src="assets/img/Copy_of_Collection_1e594.jpg" alt="" srcset="assets/img/Copy_of_Collection_11f3f.jpg 200w, assets/img/Copy_of_Collection_185c9.jpg 300w, assets/img/Copy_of_Collection_16e1e.jpg 400w, assets/img/Copy_of_Collection_1e7c6.jpg 500w, assets/img/Copy_of_Collection_14752.jpg 600w, assets/img/Copy_of_Collection_13fe9.jpg 700w, assets/img/Copy_of_Collection_1475f.jpg 800w, assets/img/Copy_of_Collection_1b314.jpg 1000w, assets/img/Copy_of_Collection_12080.jpg 1200w, assets/img/Copy_of_Collection_1dd46.jpg 1400w, assets/img/Copy_of_Collection_1efce.jpg 1600w, assets/img/Copy_of_Collection_1ef11.jpg 1800w, assets/img/Copy_of_Collection_1d496.jpg 2000w, assets/img/Copy_of_Collection_1ebed.jpg 2200w, assets/img/Copy_of_Collection_1b1c4.jpg 2400w, assets/img/Copy_of_Collection_1e991.jpg 2600w, assets/img/Copy_of_Collection_17e65.jpg 2800w, assets/img/Copy_of_Collection_14783.jpg 3000w" width="4096" height="2304" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) 100vw,(min-width: 768px) and (max-width: 1600px) 100vw,(max-width: 767px) 100vw, 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/Copy_of_Collection_1e594.jpg?v=1785187974" alt="" srcset="cdn/shop/files/Copy_of_Collection_16029.jpg?v=1785187974&amp;width=352 352w, cdn/shop/files/Copy_of_Collection_1dab1.jpg?v=1785187974&amp;width=832 832w, cdn/shop/files/Copy_of_Collection_12080.jpg?v=1785187974&amp;width=1200 1200w, cdn/shop/files/Copy_of_Collection_17860.jpg?v=1785187974&amp;width=1920 1920w, cdn/shop/files/Copy_of_Collection_19291.jpg?v=1785187974&amp;width=4096 4096w" width="4096" height="2304">
+      <img src="assets/img/Copy_of_Collection_1e594.jpg" alt="" srcset="assets/img/Copy_of_Collection_16029.jpg 352w, assets/img/Copy_of_Collection_1dab1.jpg 832w, assets/img/Copy_of_Collection_12080.jpg 1200w, assets/img/Copy_of_Collection_17860.jpg 1920w, assets/img/Copy_of_Collection_1e594.jpg 4096w" width="4096" height="2304">
 
     </noscript>
   </div>
@@ -3403,7 +3386,7 @@ data-section-type="carousel">
 
       
         .slide--image_D4meEC .slideshow__slide--image {
-          background-image: url('cdn/shop/files/WIDE_HIGH-WAISTED_TROUSERS_IN_FRESCO_202607280108_17555.jpg?v=1785187229&width=600') !important;
+          background-image: url('assets/img/WIDE_HIGH-WAISTED_TROUSERS_IN_FRESCO_202607280108_17555.jpg') !important;
           background-size: cover;
           background-position: center center;
           background-repeat: no-repeat;
@@ -3475,7 +3458,7 @@ data-section-type="carousel">
 
 
 </section><section id="shopify-section-template--17640062222403__rich_text_9K8iLx" class="shopify-section dynamic-section">
-<link href="cdn/shop/t/4/assets/section-rich-textecc0.css?v=79554134681374347691756554113" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/section-rich-text.css" rel="stylesheet" type="text/css" media="all" />
 
 
 
@@ -3539,8 +3522,8 @@ data-section-type="carousel">
 
 
 </section><section id="shopify-section-template--17640062222403__featured_collection_TBBahX" class="shopify-section dynamic-section">
-<link href="cdn/shop/t/4/assets/section-featured-collectionde70.css?v=123599238094316061401756554113" rel="stylesheet" type="text/css" media="all" />
-<link href="cdn/shop/t/4/assets/component-product-gridb3c4.css?v=151795688062861213921756554113" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/section-featured-collection.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/component-product-grid.css" rel="stylesheet" type="text/css" media="all" />
 
 
 
@@ -3554,7 +3537,7 @@ data-section-type="carousel">
   
     data-section-loaded="false"
   
-  data-asset-url="cdn/shop/t/4/assets/carousel49c7.js?v=66590362729264336851756554113"
+  data-asset-url="assets/js/carousel.js"
   data-items-per-page="7">
 
   <div class="grid__wrapper mb1">
@@ -3595,10 +3578,10 @@ data-section-type="carousel">
   
   
 <div class="box-ratio " style="padding-bottom: 133.92857142857142%;">
-    <img src="cdn/shop/files/object-remover-result-17851900661582ff2.png?v=1785190077" alt="" srcset="cdn/shop/files/object-remover-result-178519006615831dd.png?v=1785190077&amp;width=200 200w, cdn/shop/files/object-remover-result-17851900661580c2f.png?v=1785190077&amp;width=300 300w, cdn/shop/files/object-remover-result-1785190066158635d.png?v=1785190077&amp;width=400 400w, cdn/shop/files/object-remover-result-17851900661586c6d.png?v=1785190077&amp;width=500 500w, cdn/shop/files/object-remover-result-17851900661587397.png?v=1785190077&amp;width=600 600w, cdn/shop/files/object-remover-result-17851900661582ff3.png?v=1785190077&amp;width=700 700w, cdn/shop/files/object-remover-result-178519006615810dc.png?v=1785190077&amp;width=800 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
+    <img src="assets/img/object-remover-result-17851900661582ff2.png" alt="" srcset="assets/img/object-remover-result-178519006615831dd.png 200w, assets/img/object-remover-result-17851900661580c2f.png 300w, assets/img/object-remover-result-1785190066158635d.png 400w, assets/img/object-remover-result-17851900661586c6d.png 500w, assets/img/object-remover-result-17851900661587397.png 600w, assets/img/object-remover-result-17851900661582ff3.png 700w, assets/img/object-remover-result-178519006615810dc.png 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/object-remover-result-17851900661582ff2.png?v=1785190077" alt="" srcset="cdn/shop/files/object-remover-result-17851900661585955.png?v=1785190077&amp;width=352 352w, cdn/shop/files/object-remover-result-1785190066158dd50.png?v=1785190077&amp;width=832 832w, cdn/shop/files/object-remover-result-1785190066158b033.png?v=1785190077&amp;width=896 896w" width="896" height="1200">
+      <img src="assets/img/object-remover-result-17851900661582ff2.png" alt="" srcset="assets/img/object-remover-result-17851900661585955.png 352w, assets/img/object-remover-result-1785190066158dd50.png 832w, assets/img/object-remover-result-17851900661582ff2.png 896w" width="896" height="1200">
 
     </noscript>
   </div>
@@ -3617,10 +3600,10 @@ data-section-type="carousel">
   
   
 <div class="box-ratio " style="padding-bottom: 133.92857142857142%;">
-    <img src="cdn/shop/files/object-remover-result-1786190284035337a.png?v=1786190312" alt="Black Relaxed Tailored Trouser" srcset="cdn/shop/files/object-remover-result-17861902840356f2a.png?v=1786190312&amp;width=200 200w, cdn/shop/files/object-remover-result-17861902840353e39.png?v=1786190312&amp;width=300 300w, cdn/shop/files/object-remover-result-178619028403501cc.png?v=1786190312&amp;width=400 400w, cdn/shop/files/object-remover-result-178619028403571bc.png?v=1786190312&amp;width=500 500w, cdn/shop/files/object-remover-result-1786190284035acba.png?v=1786190312&amp;width=600 600w, cdn/shop/files/object-remover-result-178619028403569e9.png?v=1786190312&amp;width=700 700w, cdn/shop/files/object-remover-result-178619028403567e0.png?v=1786190312&amp;width=800 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
+    <img src="assets/img/object-remover-result-1786190284035337a.png" alt="Black Relaxed Tailored Trouser" srcset="assets/img/object-remover-result-17861902840356f2a.png 200w, assets/img/object-remover-result-17861902840353e39.png 300w, assets/img/object-remover-result-178619028403501cc.png 400w, assets/img/object-remover-result-178619028403571bc.png 500w, assets/img/object-remover-result-1786190284035acba.png 600w, assets/img/object-remover-result-178619028403569e9.png 700w, assets/img/object-remover-result-178619028403567e0.png 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/object-remover-result-1786190284035337a.png?v=1786190312" alt="Black Relaxed Tailored Trouser" srcset="cdn/shop/files/object-remover-result-178619028403550cb.png?v=1786190312&amp;width=352 352w, cdn/shop/files/object-remover-result-17861902840359312.png?v=1786190312&amp;width=832 832w, cdn/shop/files/object-remover-result-1786190284035fa45.png?v=1786190312&amp;width=896 896w" width="896" height="1200">
+      <img src="assets/img/object-remover-result-1786190284035337a.png" alt="Black Relaxed Tailored Trouser" srcset="assets/img/object-remover-result-178619028403550cb.png 352w, assets/img/object-remover-result-17861902840359312.png 832w, assets/img/object-remover-result-1786190284035337a.png 896w" width="896" height="1200">
 
     </noscript>
   </div>
@@ -4223,10 +4206,10 @@ data-section-type="carousel">
   
   
 <div class="box-ratio " style="padding-bottom: 133.92857142857142%;">
-    <img src="cdn/shop/files/object-remover-result-1785189032677dc96.png?v=1785189044" alt="" srcset="cdn/shop/files/object-remover-result-17851890326772d00.png?v=1785189044&amp;width=200 200w, cdn/shop/files/object-remover-result-1785189032677df62.png?v=1785189044&amp;width=300 300w, cdn/shop/files/object-remover-result-1785189032677ae6f.png?v=1785189044&amp;width=400 400w, cdn/shop/files/object-remover-result-178518903267764f3.png?v=1785189044&amp;width=500 500w, cdn/shop/files/object-remover-result-17851890326770ee2.png?v=1785189044&amp;width=600 600w, cdn/shop/files/object-remover-result-17851890326775f56.png?v=1785189044&amp;width=700 700w, cdn/shop/files/object-remover-result-178518903267734ca.png?v=1785189044&amp;width=800 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
+    <img src="assets/img/object-remover-result-1785189032677dc96.png" alt="" srcset="assets/img/object-remover-result-17851890326772d00.png 200w, assets/img/object-remover-result-1785189032677df62.png 300w, assets/img/object-remover-result-1785189032677ae6f.png 400w, assets/img/object-remover-result-178518903267764f3.png 500w, assets/img/object-remover-result-17851890326770ee2.png 600w, assets/img/object-remover-result-17851890326775f56.png 700w, assets/img/object-remover-result-178518903267734ca.png 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/object-remover-result-1785189032677dc96.png?v=1785189044" alt="" srcset="cdn/shop/files/object-remover-result-178518903267730d9.png?v=1785189044&amp;width=352 352w, cdn/shop/files/object-remover-result-1785189032677d72e.png?v=1785189044&amp;width=832 832w, cdn/shop/files/object-remover-result-178518903267708fd.png?v=1785189044&amp;width=896 896w" width="896" height="1200">
+      <img src="assets/img/object-remover-result-1785189032677dc96.png" alt="" srcset="assets/img/object-remover-result-178518903267730d9.png 352w, assets/img/object-remover-result-1785189032677d72e.png 832w, assets/img/object-remover-result-1785189032677dc96.png 896w" width="896" height="1200">
 
     </noscript>
   </div>
@@ -4245,10 +4228,10 @@ data-section-type="carousel">
   
   
 <div class="box-ratio " style="padding-bottom: 133.92857142857142%;">
-    <img src="cdn/shop/files/object-remover-result-1785189085595184a.png?v=1785189098" alt="Beige Relaxed Tailored Trouser" srcset="cdn/shop/files/object-remover-result-178518908559583b4.png?v=1785189098&amp;width=200 200w, cdn/shop/files/object-remover-result-1785189085595e9ee.png?v=1785189098&amp;width=300 300w, cdn/shop/files/object-remover-result-178518908559595dd.png?v=1785189098&amp;width=400 400w, cdn/shop/files/object-remover-result-178518908559517f4.png?v=1785189098&amp;width=500 500w, cdn/shop/files/object-remover-result-178518908559528c6.png?v=1785189098&amp;width=600 600w, cdn/shop/files/object-remover-result-178518908559544ac.png?v=1785189098&amp;width=700 700w, cdn/shop/files/object-remover-result-1785189085595891a.png?v=1785189098&amp;width=800 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
+    <img src="assets/img/object-remover-result-1785189085595184a.png" alt="Beige Relaxed Tailored Trouser" srcset="assets/img/object-remover-result-178518908559583b4.png 200w, assets/img/object-remover-result-1785189085595e9ee.png 300w, assets/img/object-remover-result-178518908559595dd.png 400w, assets/img/object-remover-result-178518908559517f4.png 500w, assets/img/object-remover-result-178518908559528c6.png 600w, assets/img/object-remover-result-178518908559544ac.png 700w, assets/img/object-remover-result-1785189085595891a.png 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/object-remover-result-1785189085595184a.png?v=1785189098" alt="Beige Relaxed Tailored Trouser" srcset="cdn/shop/files/object-remover-result-1785189085595ad9d.png?v=1785189098&amp;width=352 352w, cdn/shop/files/object-remover-result-17851890855955e01.png?v=1785189098&amp;width=832 832w, cdn/shop/files/object-remover-result-1785189085595fa25.png?v=1785189098&amp;width=896 896w" width="896" height="1200">
+      <img src="assets/img/object-remover-result-1785189085595184a.png" alt="Beige Relaxed Tailored Trouser" srcset="assets/img/object-remover-result-1785189085595ad9d.png 352w, assets/img/object-remover-result-17851890855955e01.png 832w, assets/img/object-remover-result-1785189085595184a.png 896w" width="896" height="1200">
 
     </noscript>
   </div>
@@ -5479,10 +5462,10 @@ data-section-type="carousel">
   
   
 <div class="box-ratio " style="padding-bottom: 133.92857142857142%;">
-    <img src="cdn/shop/files/object-remover-result-178518835231471d5.png?v=1785188439" alt="" srcset="cdn/shop/files/object-remover-result-1785188352314ddc8.png?v=1785188439&amp;width=200 200w, cdn/shop/files/object-remover-result-1785188352314830b.png?v=1785188439&amp;width=300 300w, cdn/shop/files/object-remover-result-1785188352314c223.png?v=1785188439&amp;width=400 400w, cdn/shop/files/object-remover-result-17851883523143582.png?v=1785188439&amp;width=500 500w, cdn/shop/files/object-remover-result-1785188352314955a.png?v=1785188439&amp;width=600 600w, cdn/shop/files/object-remover-result-17851883523143bc3.png?v=1785188439&amp;width=700 700w, cdn/shop/files/object-remover-result-17851883523147bbb.png?v=1785188439&amp;width=800 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
+    <img src="assets/img/object-remover-result-178518835231471d5.png" alt="" srcset="assets/img/object-remover-result-1785188352314ddc8.png 200w, assets/img/object-remover-result-1785188352314830b.png 300w, assets/img/object-remover-result-1785188352314c223.png 400w, assets/img/object-remover-result-17851883523143582.png 500w, assets/img/object-remover-result-1785188352314955a.png 600w, assets/img/object-remover-result-17851883523143bc3.png 700w, assets/img/object-remover-result-17851883523147bbb.png 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/object-remover-result-178518835231471d5.png?v=1785188439" alt="" srcset="cdn/shop/files/object-remover-result-178518835231406ad.png?v=1785188439&amp;width=352 352w, cdn/shop/files/object-remover-result-1785188352314ea54.png?v=1785188439&amp;width=832 832w, cdn/shop/files/object-remover-result-1785188352314c531.png?v=1785188439&amp;width=896 896w" width="896" height="1200">
+      <img src="assets/img/object-remover-result-178518835231471d5.png" alt="" srcset="assets/img/object-remover-result-178518835231406ad.png 352w, assets/img/object-remover-result-1785188352314ea54.png 832w, assets/img/object-remover-result-1785188352314c531.png 896w" width="896" height="1200">
 
     </noscript>
   </div>
@@ -5501,10 +5484,10 @@ data-section-type="carousel">
   
   
 <div class="box-ratio " style="padding-bottom: 133.92857142857142%;">
-    <img src="cdn/shop/files/object-remover-result-178518842102671d5.png?v=1785188439" alt="Grey Relaxed Tailored Trouser" srcset="cdn/shop/files/object-remover-result-1785188421026ddc8.png?v=1785188439&amp;width=200 200w, cdn/shop/files/object-remover-result-1785188421026830b.png?v=1785188439&amp;width=300 300w, cdn/shop/files/object-remover-result-1785188421026c223.png?v=1785188439&amp;width=400 400w, cdn/shop/files/object-remover-result-17851884210263582.png?v=1785188439&amp;width=500 500w, cdn/shop/files/object-remover-result-1785188421026955a.png?v=1785188439&amp;width=600 600w, cdn/shop/files/object-remover-result-17851884210263bc3.png?v=1785188439&amp;width=700 700w, cdn/shop/files/object-remover-result-17851884210267bbb.png?v=1785188439&amp;width=800 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
+    <img src="assets/img/object-remover-result-178518842102671d5.png" alt="Grey Relaxed Tailored Trouser" srcset="assets/img/object-remover-result-1785188421026ddc8.png 200w, assets/img/object-remover-result-1785188421026830b.png 300w, assets/img/object-remover-result-1785188421026c223.png 400w, assets/img/object-remover-result-17851884210263582.png 500w, assets/img/object-remover-result-1785188421026955a.png 600w, assets/img/object-remover-result-17851884210263bc3.png 700w, assets/img/object-remover-result-17851884210267bbb.png 800w" width="896" height="1200" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) calc(1600px / 3),(min-width: 768px) and (max-width: 1600px) calc(100vw / 3),(max-width: 767px) calc(100vw / 2), 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/object-remover-result-178518842102671d5.png?v=1785188439" alt="Grey Relaxed Tailored Trouser" srcset="cdn/shop/files/object-remover-result-178518842102606ad.png?v=1785188439&amp;width=352 352w, cdn/shop/files/object-remover-result-1785188421026ea54.png?v=1785188439&amp;width=832 832w, cdn/shop/files/object-remover-result-1785188421026c531.png?v=1785188439&amp;width=896 896w" width="896" height="1200">
+      <img src="assets/img/object-remover-result-178518842102671d5.png" alt="Grey Relaxed Tailored Trouser" srcset="assets/img/object-remover-result-178518842102606ad.png 352w, assets/img/object-remover-result-1785188421026ea54.png 832w, assets/img/object-remover-result-178518842102671d5.png 896w" width="896" height="1200">
 
     </noscript>
   </div>
@@ -6190,14 +6173,14 @@ data-section-type="carousel">
 
 
 </div><section id="shopify-section-template--17640062222403__slideshow_tHjQRX" class="shopify-section dynamic-section">
-<link href="cdn/shop/t/4/assets/section-slideshowae2c.css?v=75200571336355579281756554113" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/section-slideshow.css" rel="stylesheet" type="text/css" media="all" />
 
 
 
 <div
 class="global__section section-slideshow "
 data-section-id="template--17640062222403__slideshow_tHjQRX"
-data-asset-url="cdn/shop/t/4/assets/carousel49c7.js?v=66590362729264336851756554113"
+data-asset-url="assets/js/carousel.js"
 
   data-section-loaded="false"
 
@@ -6244,10 +6227,10 @@ data-section-type="carousel">
   
   
 <div class="box-ratio " style="padding-bottom: 55.810546875%;">
-    <img src="cdn/shop/files/object-remover-result-17863916927977e50.png?v=1786391760" alt="" srcset="cdn/shop/files/object-remover-result-17863916927976720.png?v=1786391760&amp;width=200 200w, cdn/shop/files/object-remover-result-17863916927972c88.png?v=1786391760&amp;width=300 300w, cdn/shop/files/object-remover-result-1786391692797889f.png?v=1786391760&amp;width=400 400w, cdn/shop/files/object-remover-result-178639169279748ca.png?v=1786391760&amp;width=500 500w, cdn/shop/files/object-remover-result-1786391692797f2f0.png?v=1786391760&amp;width=600 600w, cdn/shop/files/object-remover-result-17863916927978619.png?v=1786391760&amp;width=700 700w, cdn/shop/files/object-remover-result-17863916927971c64.png?v=1786391760&amp;width=800 800w, cdn/shop/files/object-remover-result-17863916927975ad4.png?v=1786391760&amp;width=1000 1000w, cdn/shop/files/object-remover-result-1786391692797c741.png?v=1786391760&amp;width=1200 1200w, cdn/shop/files/object-remover-result-1786391692797b6ea.png?v=1786391760&amp;width=1400 1400w, cdn/shop/files/object-remover-result-17863916927976e12.png?v=1786391760&amp;width=1600 1600w, cdn/shop/files/object-remover-result-17863916927976054.png?v=1786391760&amp;width=1800 1800w, cdn/shop/files/object-remover-result-17863916927974da3.png?v=1786391760&amp;width=2000 2000w" width="2048" height="1143" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) 100vw,(min-width: 768px) and (max-width: 1600px) 100vw,(max-width: 767px) 100vw, 900px" style="">
+    <img src="assets/img/object-remover-result-17863916927977e50.png" alt="" srcset="assets/img/object-remover-result-17863916927976720.png 200w, assets/img/object-remover-result-17863916927972c88.png 300w, assets/img/object-remover-result-1786391692797889f.png 400w, assets/img/object-remover-result-178639169279748ca.png 500w, assets/img/object-remover-result-1786391692797f2f0.png 600w, assets/img/object-remover-result-17863916927978619.png 700w, assets/img/object-remover-result-17863916927971c64.png 800w, assets/img/object-remover-result-17863916927975ad4.png 1000w, assets/img/object-remover-result-1786391692797c741.png 1200w, assets/img/object-remover-result-1786391692797b6ea.png 1400w, assets/img/object-remover-result-17863916927976e12.png 1600w, assets/img/object-remover-result-17863916927976054.png 1800w, assets/img/object-remover-result-17863916927974da3.png 2000w" width="2048" height="1143" loading="lazy" fetchpriority="auto" sizes="(min-width: 1601px) 100vw,(min-width: 768px) and (max-width: 1600px) 100vw,(max-width: 767px) 100vw, 900px" style="">
 
     <noscript>
-      <img src="cdn/shop/files/object-remover-result-17863916927977e50.png?v=1786391760" alt="" srcset="cdn/shop/files/object-remover-result-17863916927972c82.png?v=1786391760&amp;width=352 352w, cdn/shop/files/object-remover-result-17863916927977da6.png?v=1786391760&amp;width=832 832w, cdn/shop/files/object-remover-result-1786391692797c741.png?v=1786391760&amp;width=1200 1200w, cdn/shop/files/object-remover-result-1786391692797ac13.png?v=1786391760&amp;width=1920 1920w, cdn/shop/files/object-remover-result-178639169279741e3.png?v=1786391760&amp;width=2048 2048w" width="2048" height="1143" loading="lazy">
+      <img src="assets/img/object-remover-result-17863916927977e50.png" alt="" srcset="assets/img/object-remover-result-17863916927972c82.png 352w, assets/img/object-remover-result-17863916927977da6.png 832w, assets/img/object-remover-result-1786391692797c741.png 1200w, assets/img/object-remover-result-1786391692797ac13.png 1920w, assets/img/object-remover-result-17863916927977e50.png 2048w" width="2048" height="1143" loading="lazy">
 
     </noscript>
   </div>
@@ -6299,7 +6282,7 @@ data-section-type="carousel">
 
       
         .slide--image_hddpN7 .slideshow__slide--image {
-          background-image: url('cdn/shop/files/object-remover-result-1786391742734477a.png?v=1786391761&width=600') !important;
+          background-image: url('assets/img/object-remover-result-1786391742734477a.png') !important;
           background-size: cover;
           background-position: center center;
           background-repeat: no-repeat;
@@ -6372,7 +6355,7 @@ data-section-type="carousel">
 
 </section>
     </div><!-- BEGIN sections: footer-group -->
-<div id="shopify-section-sections--17640062550083__19f16959-c272-41ea-8bf4-a5c3ac863327" class="shopify-section shopify-section-group-footer-group"><link href="cdn/shop/t/4/assets/section-scrolling-marquee8ecc.css?v=68215587207091004731756554113" rel="stylesheet" type="text/css" media="all" />
+<div id="shopify-section-sections--17640062550083__19f16959-c272-41ea-8bf4-a5c3ac863327" class="shopify-section shopify-section-group-footer-group"><link href="assets/css/section-scrolling-marquee.css" rel="stylesheet" type="text/css" media="all" />
 <style data-shopify>
   #shopify-section-sections--17640062550083__19f16959-c272-41ea-8bf4-a5c3ac863327 {
     --font-size:  18px;
@@ -7755,7 +7738,7 @@ data-section-type="carousel">
 
 
 </div><div id="shopify-section-sections--17640062550083__footer" class="shopify-section shopify-section-group-footer-group">
-<link href="cdn/shop/t/4/assets/section-footer0fd8.css?v=5228442727047389171756554113" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/section-footer.css" rel="stylesheet" type="text/css" media="all" />
 
 
 <style data-shopify>
@@ -8006,11 +7989,11 @@ data-section-type="carousel">
   </main>
 
   <section id="shopify-section-mailing-popup" class="shopify-section">
-<link href="cdn/shop/t/4/assets/section-mailing-popup86f3.css?v=28708368103752659171756554113" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/section-mailing-popup.css" rel="stylesheet" type="text/css" media="all" />
 
 <div class="section-mailing-popup no-section-animation"
   data-section-id="mailing-popup"
-  data-asset-url="cdn/shop/t/4/assets/section-mailing-popup5dd8.js?v=164117591924197852171756554113"
+  data-asset-url="assets/js/section-mailing-popup.js"
   data-section-type="mailing-popup">
   <div class="js-popup-overlay newsletter__popup-overlay"></div>
   <div class="js-popup newsletter__popup-container color-scheme-1"
@@ -8125,13 +8108,13 @@ data-section-type="carousel">
     
   </style>
 </div>
-<script type="text/javascript" src="cdn/shop/t/4/assets/section-mailing-popup5dd8.js?v=164117591924197852171756554113" defer></script>
+<script type="text/javascript" src="assets/js/section-mailing-popup.js" defer></script>
 
 </section>
   <section id="shopify-section-quickshop" class="shopify-section">
 
-  <link href="cdn/shop/t/4/assets/section-main-product1724.css?v=35343002352605629081756554113" rel="stylesheet" type="text/css" media="all" />
-<link href="cdn/shop/t/4/assets/component-quickshop2119.css?v=137019095333963085931756554113" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/css/section-main-product.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/component-quickshop.css" rel="stylesheet" type="text/css" media="all" />
 
 
 
@@ -8273,7 +8256,7 @@ data-gallery-config=''>
 
       </div>
     </section>
-  </aside><script src="cdn/shop/t/4/assets/product-quickshopfb67.js?v=105334559247429216551756554113" defer="defer"></script>
+  </aside><script src="assets/js/product-quickshop.js" defer="defer"></script>
 <style>.product-listing__quickview-trigger svg.quickview-trigger--search {
       display: none;
     }@media (hover: hover) {
@@ -8329,8 +8312,8 @@ data-gallery-config=''>
     }
   </script>
 
-  <script src="cdn/shop/t/4/assets/cart6ddb.js?v=115435955893998290331756554113" defer="defer"></script><!-- Root element of PhotoSwipe. Must have class pswp. -->
-<link href="cdn/shop/t/4/assets/vendor-zoome1cb.css?v=175526088072400670171756554113" rel="stylesheet" type="text/css" media="all" />
+  <script src="assets/js/cart.js" defer="defer"></script><!-- Root element of PhotoSwipe. Must have class pswp. -->
+<link href="assets/css/vendor-zoom.css" rel="stylesheet" type="text/css" media="all" />
 
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
    <!-- Background of PhotoSwipe.
@@ -8483,7 +8466,7 @@ data-gallery-config=''>
   
   window.lbComponentSrc = "cdn.shopify.com/extensions/01a0ec21-7369-78a6-b9c0-c07227d664ec/lb-upsell-451/assets/lb-upsell-components.esm.js";</script>
 
-<script type="text/javascript" src="cdn.shopify.com/extensions/01a0ec21-7369-78a6-b9c0-c07227d664ec/lb-upsell-451/assets/lb-utils.js" defer="defer"></script>
+
 
 </div><!-- Failed to render app block "16987187365865460165": app block path "shopify://apps/ez-preorder/blocks/pre-order/27f5c03b-584b-4f19-8dc2-99bf52c8c09f" does not exist --><div id="shopify-block-AZTA0UUdWeWUzNG9jV__1219337400145039034" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: kwikpass --><script defer>
   function getCustomerId() {
@@ -9768,7 +9751,7 @@ data-gallery-config=''>
 </script>
 <!-- END app snippet -->
 
-</div><script src="cdn.shopify.com/storefront/standard-actions.js" type="module" data-source-attribution="shopify.standard_actions"></script>
+</div>
 <shopify-store store-domain="index.html" country="IN" language="en"></shopify-store>
 <shopify-chat></shopify-chat>
 </body>
